@@ -37,7 +37,6 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
         addressInfoLabel.backgroundColor = UIColor.white
         addressInfoLabel.text = ""
 
-
 //        네이버 맵 띄우기
         let naverMap = NMFNaverMapView(frame: CGRectMake(0, 123, 393, 637))
         let mapView = naverMap.mapView
@@ -69,6 +68,7 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
         }
     }
     
+    
 //    회원가입 완료 버튼
 //    확인 메세지 띄우기
     @IBAction func didTapnextButton(_ sender: Any) {
@@ -98,6 +98,15 @@ extension AddressVerificationViewController: NMFMapViewTouchDelegate, NMFMapView
         marker.iconTintColor = UIColor.systemMint
         
 //        도로명 주소로 변환
+        latlngToRoadAddress(latlng: latlng)
+
+    }
+    
+    func mapViewCameraIdle(_ mapView: NMFMapView) {
+           print("symbol tap")
+    }
+    
+    func latlngToRoadAddress(latlng: NMGLatLng) {
         let NAVER_GEOCODE_LATLNG = String(latlng.lng) + "," + String(latlng.lat)
         let header1 = HTTPHeader(name: "X-NCP-APIGW-API-KEY-ID", value: NAVER_CLIENT_ID)
         let header2 = HTTPHeader(name: "X-NCP-APIGW-API-KEY", value: NAVER_CLIENT_SECRET)
@@ -127,9 +136,5 @@ extension AddressVerificationViewController: NMFMapViewTouchDelegate, NMFMapView
                         fatalError()
                     }
                 }
-    }
-    
-    func mapViewCameraIdle(_ mapView: NMFMapView) {
-           print("symbol tap")
     }
 }
