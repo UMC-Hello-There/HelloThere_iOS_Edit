@@ -12,7 +12,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="Pw7-XB-SLT">
             <objects>
-                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YbR-OX-x01" customClass="SignInViewController" customModule="newTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YbR-OX-x01" customClass="SignInViewController" customModule="HelloThere_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ruf-H7-Bpo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
