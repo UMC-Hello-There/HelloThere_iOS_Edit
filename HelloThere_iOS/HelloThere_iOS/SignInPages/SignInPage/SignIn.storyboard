@@ -44,7 +44,7 @@
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vME-Ne-pmd">
                                 <rect key="frame" x="76" y="481.66666666666669" width="241" height="28.333333333333314"/>
@@ -68,6 +68,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                     <color key="baseBackgroundColor" red="0.16862745100000001" green="0.79607843140000001" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapSignInButton:" destination="YbR-OX-x01" eventType="touchUpInside" id="SZw-GU-Tdl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNS 계정으로 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NyF-te-FmS">
                                 <rect key="frame" x="136" y="630" width="121" height="17"/>
@@ -79,8 +82,8 @@
                                 <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-Jr-uZK">
-                                <rect key="frame" x="76" y="410.66666666666669" width="241" height="14.333333333333314"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-Jr-uZK">
+                                <rect key="frame" x="76" y="425" width="241" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
@@ -112,6 +115,11 @@
                             <constraint firstItem="MX3-ce-44j" firstAttribute="top" secondItem="mvH-Jr-uZK" secondAttribute="bottom" constant="9" id="zKe-y5-NIL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="0x2-NK-QTx" id="rKc-zi-DUt"/>
+                        <outlet property="passwordTextField" destination="rwk-4b-MGv" id="88a-LK-lab"/>
+                        <outlet property="signInErrorMessageLabel" destination="mvH-Jr-uZK" id="tmr-fB-A5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p6F-RY-TJZ" sceneMemberID="firstResponder"/>
             </objects>
