@@ -206,7 +206,7 @@ Hello There 시작하기</string>
                                     <action selector="didTapEmailValidateButton:" destination="bVM-VI-BMI" eventType="touchUpInside" id="eI1-Ws-KoD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-8E-9iC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZR-8E-9iC">
                                 <rect key="frame" x="161" y="282" width="212" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="212" id="Zqa-j8-qUf"/>

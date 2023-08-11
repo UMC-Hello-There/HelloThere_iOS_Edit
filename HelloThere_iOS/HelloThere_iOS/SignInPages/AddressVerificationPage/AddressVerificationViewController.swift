@@ -17,6 +17,8 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
     var marker = NMFMarker()
     let addressInfoLabel = UILabel(frame: CGRectMake(35, 739, 322, 43)) // 도로명 주소를 표시하는 라벨
     
+    var userAddress:String = ""
+    
 //    Reverse Geocode API 정보
     let NAVER_CLIENT_ID = "w79vm77s97"
     let NAVER_CLIENT_SECRET = "n1cDaJfFqm5qwt0FDQQ4uCHXljHCIm0qhweizcWG"
@@ -72,19 +74,23 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
 //    회원가입 완료 버튼
 //    확인 메세지 띄우기
     @IBAction func didTapnextButton(_ sender: Any) {
-        let alert = UIAlertController(title: "인증완료", message: "HELLO THERE을\n시작하기 위한\n모든 준비가 끝났어요", preferredStyle: .alert)
-        let cancelButton = UIAlertAction(title: "잠시만요", style: .default) { (action) in
-        }
-        alert.addAction(cancelButton)
         
-        let actionButton = UIAlertAction(title: "다음으로", style: .default) { (action) in
-            let nextStoryBoard = UIStoryboard(name: "SignIn", bundle: nil)
-            let nextViewController = nextStoryBoard.instantiateViewController(identifier: "SignIn")
-            nextViewController.modalPresentationStyle = .fullScreen
-            self.present(nextViewController, animated: true, completion: nil)
+        if userAddress.isEmpty{
+            let alert = UIAlertController(title: nil, message: "주소를 입력해주세요", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default))
+            present(alert, animated: true)
+        }else {
+            let alert = UIAlertController(title: "인증완료", message: "HELLO THERE을\n시작하기 위한\n모든 준비가 끝났어요", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "잠시만요", style: .default))
+            alert.addAction(UIAlertAction(title: "다음으로", style: .default) { (action) in
+                let nextStoryBoard = UIStoryboard(name: "SignIn", bundle: nil)
+                let nextViewController = nextStoryBoard.instantiateViewController(identifier: "SignIn")
+                nextViewController.modalPresentationStyle = .fullScreen
+                self.present(nextViewController, animated: true, completion: nil)
+            })
+            
+            present(alert, animated: true)
         }
-        alert.addAction(actionButton)
-        present(alert, animated: true, completion: nil)
     }
 }
 
@@ -125,9 +131,9 @@ extension AddressVerificationViewController: NMFMapViewTouchDelegate, NMFMapView
                                 let land = item["land"]
                                 let addition0 = land["addition0"]["value"].string ?? ""
                                 let name = land["name"].string ?? ""
-                                let userAddress = area1 + " " + area2 + " " + area3 + " " + name + ", " + addition0
-                                print("주소 : \(userAddress)")
-                                self.addressInfoLabel.text = userAddress
+                                self.userAddress = area1 + " " + area2 + " " + area3 + " " + name + ", " + addition0
+                                print("주소 : \(self.userAddress)")
+                                self.addressInfoLabel.text = self.userAddress
                             }
                         }
                     case .failure(let error):
