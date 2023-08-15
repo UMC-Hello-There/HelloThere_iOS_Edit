@@ -64,7 +64,7 @@ class SignUpViewController: UIViewController {
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-//                    print(json)
+                    print(json)
                     let isSuccess = json["result"]
                     if isSuccess.rawValue as! Bool{
 //                        print("사용가능한 이메일")
@@ -72,7 +72,8 @@ class SignUpViewController: UIViewController {
                         self.emailErrorMessage.textColor =  UIColor(red: 43/255, green: 203/255, blue: 165/255, alpha: 1)
                     }else {
 //                        print("사용불가능한 이메일")
-                        self.emailErrorMessage.text = "사용불가능한 이메일입니다"
+//                        self.emailErrorMessage.text = "사용불가능한 이메일입니다"
+                        self.emailErrorMessage.text = json["message"] as! String
                         self.emailErrorMessage.textColor = UIColor.red
                     }
                 case .failure(let error):
@@ -148,13 +149,11 @@ class SignUpViewController: UIViewController {
                 let json = JSON(value)
 //                print(json)
                 let isSuccess = json["result"]
-//                print(isSuccess)
+
                 if isSuccess.rawValue as! Bool{
-//                    print("사용가능한 닉네임")
                     self.nicknameErrorMessage.textColor = UIColor(red: 43/255, green: 203/255, blue: 165/255, alpha: 1)
                     self.nicknameErrorMessage.text = "사용가능한 닉네임입니다"
                 }else {
-//                    print("사용불가능한 닉네임")
                     self.nicknameErrorMessage.text = "사용 중인 닉네임입니다"
                     self.nicknameErrorMessage.textColor = UIColor.red
                 }
@@ -174,7 +173,7 @@ class SignUpViewController: UIViewController {
     
     func isSignUpValidate(nickName:String, email:String, password:String, passwordChk:String){
         let url = "http://3.37.126.149:8080/users"
-        struct LoginResult: Codable {
+        struct SignUpResult: Codable {
             let isSuccess: Bool
             let code: Int
             let message: String
@@ -197,7 +196,7 @@ class SignUpViewController: UIViewController {
                     guard let result = response.data else { return }
                     do {
                         let decoder = JSONDecoder()
-                        let json = try decoder.decode(LoginResult.self, from: result)
+                        let json = try decoder.decode(SignUpResult.self, from: result)
 //                        print(json)
 //                        print(json.isSuccess)
                         if json.isSuccess {

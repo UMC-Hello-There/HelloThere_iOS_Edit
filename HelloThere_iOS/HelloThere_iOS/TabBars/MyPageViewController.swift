@@ -6,19 +6,24 @@
 //
 
 import UIKit
+import Alamofire
 
 class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var tableView: UITableView!
-    
-    let data = [["주소 인증","비밀번호 변경"],["푸시알림 설정","쪽지 설정"],["내 게시물","내가 댓글 단 게시물"],["회원 탈퇴","로그아웃"]]
+    @IBOutlet weak var nicknameTextField: UITextView!
+
+    let data = [["주소 인증","비밀번호 변경"],["푸시알림 설정","쪽지 설정"],["내 게시물","내가 댓글 단 게시물"],["로그아웃", "회원 탈퇴"]]
     let header = ["계정","설정","커뮤니티","기타"]
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        닉네임 라벨 (api연결해서 닉네임 띄울 예정)
+        nicknameTextField.text = "새유저"
         
         profileImg.layer.cornerRadius = profileImg.frame.height/2
         profileImg.layer.borderWidth = 1
@@ -30,8 +35,60 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.rowHeight = 35
        
+        
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
+    
+    
+//    닉네임 변경 버튼을 클릭했을 때
+    @IBAction func didTapModifiedNicknameButton(_ sender: Any) {
+        let urlNickname = "http://3.37.126.149:8080/users/nickname?nickName=\(nicknameTextField.text ?? "")"
+        let encodedStr = urlNickname.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! // 닉네임이 한국어로 들어가는 경우
+        let url = URL(string: encodedStr)!
+
+        struct nicknameModifiedResult: Codable {
+            let isSuccess: Bool
+            let code: Int
+            let message: String
+            let result : String?
+        }
+
+    let header = HTTPHeaders([HTTPHeader(name: "Authorization", value: UserDefaults.standard.string(forKey: "accessToken") ?? "")])
+
+        AF.request(url, method: .patch, encoding: JSONEncoding.default, headers: header).responseJSON {
+                response in
+                switch response.result {
+                case .success:
+                    guard let result = response.data else { return }
+                    do {
+                        let decoder = JSONDecoder()
+                        let json = try decoder.decode(nicknameModifiedResult.self, from: result)
+                        print(json)
+                        if json.isSuccess {
+                            print("닉네임 변경 성공")
+                            self.sendMessage(text: "닉네임이 변경되었습니다")
+                        } else {
+                            self.sendMessage(text: json.message)
+                            self.nicknameTextField.text = ""
+                        }
+                    } catch{
+                        print("닉네임 변경 실패")
+                    }
+                case .failure(let error):
+                    print(error.errorDescription ?? "")
+                default:
+                    return
+                }
+            }
+    }
+    
+    
+    func sendMessage(text: String) {
+        let sheet = UIAlertController(title: nil, message: text, preferredStyle: .alert)
+        sheet.addAction(UIAlertAction(title: "확인", style: .default))
+        self.present(sheet, animated: true)
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data[section].count
@@ -114,13 +171,56 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case 3:
             switch indexPath.row{
             
-            case 0:self.performSegue(withIdentifier: "showWithDrawl", sender: nil)
-            case 1:
+            case 1:self.performSegue(withIdentifier: "showWithDrawl", sender: nil)
+            case 0:
                 let sheet = UIAlertController(title: nil, message: "로그아웃 하시겠습니까?", preferredStyle: .alert)
-                sheet.addAction(UIAlertAction(title: "네", style: .default, handler: nil))
+                sheet.addAction(UIAlertAction(title: "네", style: .default) {
+                    (action) in
+                    
+                    let url = "http://3.37.126.149:8080/users/log-out"
+                    
+                    struct SignOutResult: Codable {
+                        let isSuccess: Bool
+                        let code: Int
+                        let message: String
+                        let result : String
+                    }
+                    
+                    let header = HTTPHeaders([HTTPHeader(name: "Authorization", value: UserDefaults.standard.string(forKey: "accessToken") ?? "")])
+                    
+//                    let headers = HTTPHeaders([header])
+                    AF.request(url, method: .post, encoding: JSONEncoding.default, headers: header).responseJSON {
+                        response in
+                        switch response.result {
+                        case .success:
+                            guard let result = response.data else { return }
+                            do {
+                                let json = try JSONDecoder().decode(SignOutResult.self, from: result)
+                                print(json)
+                                if json.isSuccess {
+                                    print("로그아웃 성공")
+                                    
+                                    UserDefaults.standard.set(false, forKey: "isSignIn")
+                                            
+                                    let nextStoryboard = UIStoryboard(name: "SignIn", bundle: nil)
+                                    let nextViewController = nextStoryboard.instantiateViewController(identifier: "SignIn")
+                                    nextViewController.modalPresentationStyle = .fullScreen
+                                    self.present(nextViewController, animated: true, completion: nil)
+                                } else {
+                                    print("로그아웃 실패")
+                                }
+                            } catch{
+                                print("로그아웃 실패")
+                            }
+                        case .failure(let error):
+                            print(error.errorDescription ?? "")
+                        default:
+                            return
+                        }
+                    }
+                })
                 sheet.addAction(UIAlertAction(title: "아니오", style: .cancel, handler: nil))
                 self.present(sheet, animated: true)
-                
             default:
                 return
             }
@@ -140,16 +240,4 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

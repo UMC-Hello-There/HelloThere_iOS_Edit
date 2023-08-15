@@ -46,6 +46,13 @@ class SignInViewController: UIViewController {
             let isSuccess: Bool
             let code: Int
             let message: String
+            let result: Data?
+        }
+        
+        struct Data: Codable {
+            let userId: Int
+            let accessToken: String
+            let refreshToken: String
         }
         
         let body: Parameters = [
@@ -63,15 +70,30 @@ class SignInViewController: UIViewController {
                 do {
                     let decoder = JSONDecoder()
                     let json = try decoder.decode(LoginResult.self, from: result)
-//                    print(json)
-//                    print(json.isSuccess)
+                    print(json)
+
                     if json.isSuccess {
-//                        print("로그인 성공")
+                        print("로그인 성공")
+                        
                         let defaults = UserDefaults.standard
                         defaults.set(true, forKey: "isSignIn")
                         defaults.set(email, forKey: "email")
                         defaults.set(password, forKey: "password")
+                        
+                        print(">>")
+                        print(json.result?.accessToken)
+                        defaults.set(json.result?.accessToken, forKey: "accessToken")
                         self.signInErrorMessageLabel.text = "성공✅"
+                        
+                        let nextStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                        let nextViewController = nextStoryBoard.instantiateViewController(identifier: "Main")
+                        nextViewController.modalPresentationStyle = .fullScreen
+                        self.present(nextViewController, animated: true, completion: nil)
+                        
+                    } else if json.code == 6004 {
+                        print("이미 로그인한 유저")
+                        print(UserDefaults.standard.string(forKey: "accessToken"))
+                        self.signInErrorMessageLabel.text = "이미 로그인한 유저입니다"
                     } else {
                         print("로그인 실패")
                         self.signInErrorMessageLabel.text = "존재하지 않는 회원입니다"
