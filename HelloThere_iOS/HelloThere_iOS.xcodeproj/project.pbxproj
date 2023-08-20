@@ -18,6 +18,17 @@
 		42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ADD8122A80DDE500925FE1 /* SignUp.storyboard */; };
 		42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ADD8142A80DDF500925FE1 /* SignUpViewController.swift */; };
 		6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA07E51300F0E6EB0A919B /* Pods_HelloThere_iOS.framework */; };
+		C6FB0EAD2A8FB94A0059CBE8 /* SearchingPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0E972A8FB94A0059CBE8 /* SearchingPostsCell.swift */; };
+		C6FB0EAE2A8FB94A0059CBE8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0E982A8FB94A0059CBE8 /* SearchViewController.swift */; };
+		C6FB0EAF2A8FB94A0059CBE8 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB0E992A8FB94A0059CBE8 /* Search.storyboard */; };
+		C6FB0EB42A8FB94A0059CBE8 /* AdQusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0EA12A8FB94A0059CBE8 /* AdQusViewController.swift */; };
+		C6FB0EB52A8FB94A0059CBE8 /* AdQues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB0EA22A8FB94A0059CBE8 /* AdQues.storyboard */; };
+		C6FB0EB62A8FB94A0059CBE8 /* NewPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0EA42A8FB94A0059CBE8 /* NewPostsCell.swift */; };
+		C6FB0EB72A8FB94A0059CBE8 /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0EA52A8FB94A0059CBE8 /* NewHappeningViewController.swift */; };
+		C6FB0EB82A8FB94A0059CBE8 /* NewHappening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB0EA62A8FB94A0059CBE8 /* NewHappening.storyboard */; };
+		C6FB0EBA2A8FB94A0059CBE8 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0EA92A8FB94A0059CBE8 /* ManageViewController.swift */; };
+		C6FB0EBB2A8FB94A0059CBE8 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FB0EAA2A8FB94A0059CBE8 /* Manage.storyboard */; };
+		C6FB0EE22A8FF8620059CBE8 /* HomeTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB0EE12A8FF8620059CBE8 /* HomeTapViewController.swift */; };
 		E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */; };
 		E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1752A5D373900D734B5 /* AppDelegate.swift */; };
 		E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1772A5D373900D734B5 /* SceneDelegate.swift */; };
@@ -25,11 +36,9 @@
 		E2A6A17D2A5D373900D734B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A17B2A5D373900D734B5 /* Main.storyboard */; };
 		E2A6A17F2A5D373B00D734B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A17E2A5D373B00D734B5 /* Assets.xcassets */; };
 		E2A6A1822A5D373B00D734B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1802A5D373B00D734B5 /* LaunchScreen.storyboard */; };
-		E2A6A1932A6CF22500D734B5 /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1922A6CF22500D734B5 /* ChatTab.storyboard */; };
-		E2A6A1952A6CF23500D734B5 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */; };
+		E2A6A1952A6CF23500D734B5 /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1942A6CF23500D734B5 /* ChatTab.storyboard */; };
 		E2A6A1972A6CF24600D734B5 /* MyPageTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1962A6CF24600D734B5 /* MyPageTab.storyboard */; };
 		E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */; };
-		E2A6A19B2A6CF3EB00D734B5 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */; };
 		E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */; };
 		E2A6A19F2A6D164D00D734B5 /* ChangePwCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A19E2A6D164D00D734B5 /* ChangePwCell.storyboard */; };
 		E2A6A1A12A6D168E00D734B5 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1A02A6D168E00D734B5 /* ChangePasswordViewController.swift */; };
@@ -53,11 +62,23 @@
 		4200395E2A81E02A00461FDA /* AddressVerification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressVerification.storyboard; sourceTree = "<group>"; };
 		420039602A81E03800461FDA /* AddressVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVerificationViewController.swift; sourceTree = "<group>"; };
 		4248C7272A861006003234CA /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		4248C7292A8615E0003234CA /* SetAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SetAlarm.storyboard; path = ../../../../../../.Trash/SetAlarm.storyboard; sourceTree = "<group>"; };
+		4248C7292A8615E0003234CA /* SetAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetAlarm.storyboard; sourceTree = "<group>"; };
 		42ADD80D2A80D9BB00925FE1 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		42ADD80F2A80D9D900925FE1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		42ADD8122A80DDE500925FE1 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		42ADD8142A80DDF500925FE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C6FB0E972A8FB94A0059CBE8 /* SearchingPostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingPostsCell.swift; sourceTree = "<group>"; };
+		C6FB0E982A8FB94A0059CBE8 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C6FB0E992A8FB94A0059CBE8 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		C6FB0EA12A8FB94A0059CBE8 /* AdQusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdQusViewController.swift; sourceTree = "<group>"; };
+		C6FB0EA22A8FB94A0059CBE8 /* AdQues.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdQues.storyboard; sourceTree = "<group>"; };
+		C6FB0EA42A8FB94A0059CBE8 /* NewPostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostsCell.swift; sourceTree = "<group>"; };
+		C6FB0EA52A8FB94A0059CBE8 /* NewHappeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHappeningViewController.swift; sourceTree = "<group>"; };
+		C6FB0EA62A8FB94A0059CBE8 /* NewHappening.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewHappening.storyboard; sourceTree = "<group>"; };
+		C6FB0EA92A8FB94A0059CBE8 /* ManageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		C6FB0EAA2A8FB94A0059CBE8 /* Manage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Manage.storyboard; sourceTree = "<group>"; };
+		C6FB0EE02A8FF85F0059CBE8 /* HomeTap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTap.storyboard; sourceTree = "<group>"; };
+		C6FB0EE12A8FF8620059CBE8 /* HomeTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTapViewController.swift; sourceTree = "<group>"; };
 		D53C4E50687C2E3D7562D935 /* Pods-HelloThere_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloThere_iOS.debug.xcconfig"; path = "Target Support Files/Pods-HelloThere_iOS/Pods-HelloThere_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = showMyComments.storyboard; sourceTree = "<group>"; };
 		E2A6A1722A5D373900D734B5 /* HelloThere_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloThere_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,11 +89,9 @@
 		E2A6A17E2A5D373B00D734B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2A6A1812A5D373B00D734B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2A6A1832A5D373B00D734B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2A6A1922A6CF22500D734B5 /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
-		E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		E2A6A1942A6CF23500D734B5 /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
 		E2A6A1962A6CF24600D734B5 /* MyPageTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageTab.storyboard; sourceTree = "<group>"; };
 		E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabViewController.swift; sourceTree = "<group>"; };
-		E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		E2A6A19E2A6D164D00D734B5 /* ChangePwCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePwCell.storyboard; sourceTree = "<group>"; };
 		E2A6A1A02A6D168E00D734B5 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +176,56 @@
 			path = SignUpPage;
 			sourceTree = "<group>";
 		};
+		C6FB0E952A8FB94A0059CBE8 /* Mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB0E962A8FB94A0059CBE8 /* SearchPage */,
+				C6FB0EA02A8FB94A0059CBE8 /* AdQusPage */,
+				C6FB0EA32A8FB94A0059CBE8 /* NewHappeningPage */,
+				C6FB0EA82A8FB94A0059CBE8 /* ManagePage */,
+			);
+			name = Mainpage;
+			path = ../../../../../Desktop/Mainpage/Mainpage/Mainpage;
+			sourceTree = "<group>";
+		};
+		C6FB0E962A8FB94A0059CBE8 /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB0E972A8FB94A0059CBE8 /* SearchingPostsCell.swift */,
+				C6FB0E982A8FB94A0059CBE8 /* SearchViewController.swift */,
+				C6FB0E992A8FB94A0059CBE8 /* Search.storyboard */,
+			);
+			path = SearchPage;
+			sourceTree = "<group>";
+		};
+		C6FB0EA02A8FB94A0059CBE8 /* AdQusPage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB0EA12A8FB94A0059CBE8 /* AdQusViewController.swift */,
+				C6FB0EA22A8FB94A0059CBE8 /* AdQues.storyboard */,
+			);
+			path = AdQusPage;
+			sourceTree = "<group>";
+		};
+		C6FB0EA32A8FB94A0059CBE8 /* NewHappeningPage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB0EA42A8FB94A0059CBE8 /* NewPostsCell.swift */,
+				C6FB0EA52A8FB94A0059CBE8 /* NewHappeningViewController.swift */,
+				C6FB0EA62A8FB94A0059CBE8 /* NewHappening.storyboard */,
+			);
+			path = NewHappeningPage;
+			sourceTree = "<group>";
+		};
+		C6FB0EA82A8FB94A0059CBE8 /* ManagePage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FB0EA92A8FB94A0059CBE8 /* ManageViewController.swift */,
+				C6FB0EAA2A8FB94A0059CBE8 /* Manage.storyboard */,
+			);
+			path = ManagePage;
+			sourceTree = "<group>";
+		};
 		DA321A7BBC578EFB34B4E721 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +264,7 @@
 		E2A6A1742A5D373900D734B5 /* HelloThere_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C6FB0E952A8FB94A0059CBE8 /* Mainpage */,
 				4248C7262A860FC4003234CA /* Utils */,
 				42ADD80C2A80D9AC00925FE1 /* SignInPages */,
 				E2A6A1B42A6E37CA00D734B5 /* MyDetailPages */,
@@ -210,11 +280,11 @@
 			isa = PBXGroup;
 			children = (
 				E2A6A1962A6CF24600D734B5 /* MyPageTab.storyboard */,
-				E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */,
-				E2A6A1922A6CF22500D734B5 /* ChatTab.storyboard */,
+				C6FB0EE02A8FF85F0059CBE8 /* HomeTap.storyboard */,
+				E2A6A1942A6CF23500D734B5 /* ChatTab.storyboard */,
 				E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */,
-				E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */,
 				E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */,
+				C6FB0EE12A8FF8620059CBE8 /* HomeTapViewController.swift */,
 			);
 			path = TabBars;
 			sourceTree = "<group>";
@@ -370,13 +440,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				42ADD80E2A80D9BB00925FE1 /* SignIn.storyboard in Resources */,
-				E2A6A1932A6CF22500D734B5 /* ChatTab.storyboard in Resources */,
+				C6FB0EBB2A8FB94A0059CBE8 /* Manage.storyboard in Resources */,
+				C6FB0EB82A8FB94A0059CBE8 /* NewHappening.storyboard in Resources */,
 				E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */,
 				E2A6A1CE2A725D5F00D734B5 /* showMyComments.storyboard in Resources */,
+				C6FB0EB52A8FB94A0059CBE8 /* AdQues.storyboard in Resources */,
 				E2A6A1D22A725E0800D734B5 /* WithDrawl.storyboard in Resources */,
 				E2A6A1822A5D373B00D734B5 /* LaunchScreen.storyboard in Resources */,
-				E2A6A1952A6CF23500D734B5 /* HomeTab.storyboard in Resources */,
+				E2A6A1952A6CF23500D734B5 /* ChatTab.storyboard in Resources */,
 				E2A6A1CA2A725CB400D734B5 /* ShowMyPost.storyboard in Resources */,
+				C6FB0EAF2A8FB94A0059CBE8 /* Search.storyboard in Resources */,
 				42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */,
 				4200395F2A81E02A00461FDA /* AddressVerification.storyboard in Resources */,
 				E2A6A1B62A6E3B1C00D734B5 /* AddressCell.storyboard in Resources */,
@@ -442,19 +515,25 @@
 				42ADD8102A80D9D900925FE1 /* SignInViewController.swift in Sources */,
 				E2A6A1BC2A6E3D6A00D734B5 /* SetAlarmViewController.swift in Sources */,
 				E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */,
+				C6FB0EB72A8FB94A0059CBE8 /* NewHappeningViewController.swift in Sources */,
 				E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */,
+				C6FB0EE22A8FF8620059CBE8 /* HomeTapViewController.swift in Sources */,
+				C6FB0EB42A8FB94A0059CBE8 /* AdQusViewController.swift in Sources */,
+				C6FB0EAD2A8FB94A0059CBE8 /* SearchingPostsCell.swift in Sources */,
 				E2A6A1B82A6E3B2F00D734B5 /* AddressAuthViewController.swift in Sources */,
 				E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */,
 				E2A6A1D02A725D6C00D734B5 /* showMyCommentsViewController.swift in Sources */,
 				4248C7282A861006003234CA /* Manager.swift in Sources */,
 				E2A6A17A2A5D373900D734B5 /* ViewController.swift in Sources */,
+				C6FB0EAE2A8FB94A0059CBE8 /* SearchViewController.swift in Sources */,
 				E2A6A1D42A725E1400D734B5 /* WithDrawlViewController.swift in Sources */,
 				42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */,
 				E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */,
 				420039612A81E03800461FDA /* AddressVerificationViewController.swift in Sources */,
+				C6FB0EB62A8FB94A0059CBE8 /* NewPostsCell.swift in Sources */,
 				E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */,
-				E2A6A19B2A6CF3EB00D734B5 /* HomeTabViewController.swift in Sources */,
 				4200395A2A81DD4F00461FDA /* SignUpGuideViewController.swift in Sources */,
+				C6FB0EBA2A8FB94A0059CBE8 /* ManageViewController.swift in Sources */,
 				E2A6A1A12A6D168E00D734B5 /* ChangePasswordViewController.swift in Sources */,
 				E2A6A1CC2A725CC700D734B5 /* ShowMyPostViewController.swift in Sources */,
 			);
