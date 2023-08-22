@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="rrY-Jr-X7u">
-                                <rect key="frame" x="25" y="59" width="364" height="37"/>
+                                <rect key="frame" x="25" y="63" width="364" height="37"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kZI-k2-f5T">
                                         <rect key="frame" x="0.0" y="0.0" width="136" height="37"/>
@@ -45,7 +46,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="O7V-Lc-Vye">
-                                <rect key="frame" x="30" y="300" width="354" height="34"/>
+                                <rect key="frame" x="30" y="304" width="354" height="34"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tre-Aq-tpU">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
@@ -62,7 +63,7 @@
                                                     <constraint firstAttribute="width" constant="200" id="iTf-4C-iWB"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -86,9 +87,12 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapPasswordModifiedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3F2-Am-6Ak"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wN1-0H-hS6">
-                                <rect key="frame" x="30" y="176" width="354" height="34"/>
+                                <rect key="frame" x="30" y="180" width="354" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기존 비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-iN-f9E">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="34"/>
@@ -102,18 +106,12 @@
                                             <constraint firstAttribute="width" constant="200" id="i0A-CM-3Ri"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호가 일치하지 않아요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSW-Kf-I2b">
-                                <rect key="frame" x="150" y="215" width="120.5" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6o5-W2-2bF">
-                                <rect key="frame" x="30" y="394" width="354" height="34"/>
+                                <rect key="frame" x="30" y="398" width="354" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLQ-nV-KGD">
                                         <rect key="frame" x="0.0" y="0.0" width="146" height="34"/>
@@ -127,50 +125,37 @@
                                             <constraint firstAttribute="width" constant="200" id="4ba-uH-FNw"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영문, 숫자, 특수문자가 조합된 8~15자" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-Ap-FIg">
-                                <rect key="frame" x="150" y="339" width="169.5" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호가 일치하지 않아요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMB-Mt-rE3">
-                                <rect key="frame" x="150" y="434" width="120.5" height="13.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" systemColor="systemRedColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6o5-W2-2bF" firstAttribute="top" secondItem="O7V-Lc-Vye" secondAttribute="bottom" constant="60" id="9Tb-2d-pBq"/>
                             <constraint firstItem="rrY-Jr-X7u" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="BBd-hK-gb1"/>
-                            <constraint firstItem="MSW-Kf-I2b" firstAttribute="top" secondItem="wN1-0H-hS6" secondAttribute="bottom" constant="5" id="Dg4-2j-Ilt"/>
                             <constraint firstItem="6o5-W2-2bF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="GCc-62-cEU"/>
                             <constraint firstItem="rrY-Jr-X7u" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="HHD-Ra-jOK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TKL-70-yoV" secondAttribute="bottom" constant="60" id="Jd8-wh-F3t"/>
                             <constraint firstItem="TKL-70-yoV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="KRO-1R-hTb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TKL-70-yoV" secondAttribute="trailing" constant="80" id="QO0-aO-EP3"/>
-                            <constraint firstItem="fMB-Mt-rE3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="TG1-hD-Li7"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rrY-Jr-X7u" secondAttribute="trailing" constant="25" id="WQd-XZ-u88"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O7V-Lc-Vye" secondAttribute="trailing" constant="30" id="aYw-g0-zUF"/>
                             <constraint firstAttribute="trailing" secondItem="wN1-0H-hS6" secondAttribute="trailing" constant="30" id="b4M-uG-8Db"/>
                             <constraint firstItem="TKL-70-yoV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="80" id="eSl-5a-koS"/>
-                            <constraint firstItem="fMB-Mt-rE3" firstAttribute="top" secondItem="6o5-W2-2bF" secondAttribute="bottom" constant="6" id="gnH-UU-1tg"/>
                             <constraint firstItem="O7V-Lc-Vye" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="gvz-Io-0Er"/>
                             <constraint firstItem="O7V-Lc-Vye" firstAttribute="top" secondItem="wN1-0H-hS6" secondAttribute="bottom" constant="90" id="h27-In-gM0"/>
                             <constraint firstAttribute="trailing" secondItem="6o5-W2-2bF" secondAttribute="trailing" constant="30" id="jHm-zN-nqn"/>
                             <constraint firstItem="wN1-0H-hS6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="jXM-qf-Hjx"/>
-                            <constraint firstItem="qCz-Ap-FIg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="jkh-oa-ai4"/>
-                            <constraint firstItem="MSW-Kf-I2b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="150" id="qjV-ks-IbW"/>
                             <constraint firstItem="wN1-0H-hS6" firstAttribute="top" secondItem="rrY-Jr-X7u" secondAttribute="bottom" constant="80" id="sBS-Tp-pRM"/>
-                            <constraint firstItem="qCz-Ap-FIg" firstAttribute="top" secondItem="O7V-Lc-Vye" secondAttribute="bottom" constant="5" id="vAm-PY-UM8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="exPasswordTextField" destination="n2d-4Z-Ajg" id="U4x-O0-xCb"/>
+                        <outlet property="newPasswordChkTextField" destination="cj0-Zq-Lkv" id="hxP-Mr-qAX"/>
+                        <outlet property="newPasswordTextField" destination="HnY-Bq-PPq" id="reW-Sk-M3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,9 +176,6 @@
         <image name="logo" width="136" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

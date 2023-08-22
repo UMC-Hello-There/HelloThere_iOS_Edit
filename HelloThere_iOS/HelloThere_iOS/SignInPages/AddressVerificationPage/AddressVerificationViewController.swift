@@ -1,8 +1,8 @@
 //
-//  AddressAuthViewController.swift
+//  AddressVerificationViewController.swift
 //  HelloThere_iOS
 //
-//  Created by 서보현 on 2023/07/24.
+//  Created by 우주대스타 on 2023-08-08.
 //
 
 import UIKit
@@ -11,13 +11,13 @@ import Alamofire
 import SwiftyJSON
 import CoreLocation
 
-class AddressAuthViewController: UIViewController, CLLocationManagerDelegate {
+class AddressVerificationViewController: UIViewController, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
     var marker = NMFMarker()
     let addressInfoLabel = UILabel(frame: CGRectMake(35, 739, 322, 43)) // 도로명 주소를 표시하는 라벨
     
-    var userAddress: String = ""
+    var userAddress:String = ""
     
 //    Reverse Geocode API 정보
     let NAVER_CLIENT_ID = "w79vm77s97"
@@ -28,6 +28,7 @@ class AddressAuthViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        도로명 주소를 표시하는 라벨
         addressInfoLabel.textAlignment = .center
         addressInfoLabel.layer.borderColor = UIColor.black.cgColor
         addressInfoLabel.layer.borderWidth = 0.5
@@ -70,23 +71,30 @@ class AddressAuthViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    @IBAction func didTapAddressVerificationButton(_ sender: Any) {
+//    회원가입 완료 버튼
+//    확인 메세지 띄우기
+    @IBAction func didTapnextButton(_ sender: Any) {
+        
         if userAddress.isEmpty{
-            sendMessage(text: "주소를 입력해주세요")
+            let alert = UIAlertController(title: nil, message: "주소를 입력해주세요", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default))
+            present(alert, animated: true)
         }else {
-            sendMessage(text: "주소 인증 완료")
+            let alert = UIAlertController(title: "인증완료", message: "HELLO THERE을\n시작하기 위한\n모든 준비가 끝났어요", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "잠시만요", style: .default))
+            alert.addAction(UIAlertAction(title: "다음으로", style: .default) { (action) in
+                let nextStoryBoard = UIStoryboard(name: "SignIn", bundle: nil)
+                let nextViewController = nextStoryBoard.instantiateViewController(identifier: "SignIn")
+                nextViewController.modalPresentationStyle = .fullScreen
+                self.present(nextViewController, animated: true, completion: nil)
+            })
+            
+            present(alert, animated: true)
         }
-    }
-    
-    func sendMessage(text:String){
-        let alert = UIAlertController(title: nil, message: text, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "확인", style: .default))
-        present(alert, animated: true)
     }
 }
 
-
-extension AddressAuthViewController: NMFMapViewTouchDelegate, NMFMapViewCameraDelegate {
+extension AddressVerificationViewController: NMFMapViewTouchDelegate, NMFMapViewCameraDelegate {
 
     func mapView(_ mapView: NMFMapView, didTapMap latlng: NMGLatLng, point: CGPoint){
         

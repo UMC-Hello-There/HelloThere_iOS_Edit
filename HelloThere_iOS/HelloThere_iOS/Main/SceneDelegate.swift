@@ -17,8 +17,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        window!.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
-        // 위 코드는 시작화면을 로그인 생략하고 메인페이지로 띄우기 위한 코드입니다.
+//        자동로그인 부분
+//        회원가입 되어 있는 계정 (testUser@naver.com, Test123)
+//        UserDefaults.standard.removeObject(forKey: "isSignIn")
+        if UserDefaults.standard.bool(forKey: "isSignIn") == true {
+            window!.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        } else {
+            window!.rootViewController = UIStoryboard(name: "SignIn", bundle: nil).instantiateInitialViewController()
+        }
         
         guard let _ = (scene as? UIWindowScene) else { return }
     }
