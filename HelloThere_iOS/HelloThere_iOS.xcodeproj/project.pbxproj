@@ -184,8 +184,7 @@
 				C6FB0EA32A8FB94A0059CBE8 /* NewHappeningPage */,
 				C6FB0EA82A8FB94A0059CBE8 /* ManagePage */,
 			);
-			name = Mainpage;
-			path = ../../../../../Desktop/Mainpage/Mainpage/Mainpage;
+			path = Mainpage;
 			sourceTree = "<group>";
 		};
 		C6FB0E962A8FB94A0059CBE8 /* SearchPage */ = {

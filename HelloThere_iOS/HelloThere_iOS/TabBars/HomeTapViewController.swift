@@ -199,14 +199,14 @@ class HomeTapViewController: UIViewController {
     
     func updateUI() {
         AddressButton1.setTitle(address1, for: .normal)
-                AddressButton2.setTitle(address2, for: .normal)
+        AddressButton2.setTitle(address2, for: .normal)
 
                 // houseData로부터 정보를 가져와 UI를 업데이트합니다.
-                if let houseInfo = houseData.first {
+        if let houseInfo = houseData.first {
                     // houseName은 addressButton1으로 설정
-                    AddressButton1.setTitle(houseInfo.houseName, for: .normal)
+        AddressButton1.setTitle(houseInfo.houseName, for: .normal)
                     // City, District, streetAddress를 addressButton2로 설정
-                    AddressButton2.setTitle("\(houseInfo.city) \(houseInfo.district) \(houseInfo.streetAddress)", for: .normal)
+        AddressButton2.setTitle("\(houseInfo.city) \(houseInfo.district) \(houseInfo.streetAddress)", for: .normal)
                 }
         if hotBoardData.count >= 4 {
             PopularButton1.setTitle(hotBoardData[0].title, for: .normal)
