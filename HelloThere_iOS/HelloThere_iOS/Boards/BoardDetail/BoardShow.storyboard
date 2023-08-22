@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Board Show View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BoardShowViewController" customModule="HelloThere_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-H9-8aL">
+                                <rect key="frame" x="25" y="59" width="145" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="7vz-03-chQ"/>
+                                    <constraint firstAttribute="height" constant="25" id="JE8-RV-1kC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-yI-cC6">
+                                <rect key="frame" x="355" y="59" width="34" height="33"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cancle"/>
+                                <connections>
+                                    <action selector="CancelShow:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vH6-3v-VcV"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0B4-em-quL">
+                                <rect key="frame" x="25" y="136" width="341" height="649"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-qG-bkM">
+                                        <rect key="frame" x="17" y="148" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="De5-og-7c5"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="7oc-8M-ngN"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0B4-em-quL" secondAttribute="bottom" id="Bct-kb-VkR"/>
+                            <constraint firstItem="0B4-em-quL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IOK-sC-5c5"/>
+                            <constraint firstItem="KcW-H9-8aL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="Ixa-nB-Ftp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LCb-yI-cC6" secondAttribute="trailing" constant="25" id="JpI-Gu-KZA"/>
+                            <constraint firstItem="0B4-em-quL" firstAttribute="top" secondItem="KcW-H9-8aL" secondAttribute="bottom" id="Q0o-xC-yd1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0B4-em-quL" secondAttribute="trailing" id="XqC-dY-Ipo"/>
+                            <constraint firstItem="KcW-H9-8aL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="ac4-zM-hQO"/>
+                            <constraint firstItem="LCb-yI-cC6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="t3P-h9-dOy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i3U-KX-fZE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancle" width="19" height="19"/>
+        <image name="logo" width="136" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,18 +1,21 @@
 //
-//  HomeTabViewController.swift
+//  BoardWriteViewController.swift
 //  HelloThere_iOS
 //
-//  Created by 서보현 on 2023/07/23.
+//  Created by 서보현 on 2023/08/09.
 //
 
 import UIKit
 
-class HomeTabViewController: UIViewController {
+class BoardWriteViewController: UIViewController {
 
+   
+    @IBAction func CancleWrite(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.isHidden = true;
 
         // Do any additional setup after loading the view.
     }
