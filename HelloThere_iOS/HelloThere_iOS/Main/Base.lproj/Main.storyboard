@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmK-2w-kyi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cmK-2w-kyi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +16,10 @@
             </objects>
             <point key="canvasLocation" x="-565" y="528"/>
         </scene>
-        <!--HomeTabViewController-->
+        <!--HomeTabNavi-->
         <scene sceneID="a06-ii-Rbb">
             <objects>
-                <viewControllerPlaceholder storyboardName="HomeTab" referencedIdentifier="HomeTabViewController" id="UId-jr-gwP" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomeTab" referencedIdentifier="HomeTabNavi" id="UId-jr-gwP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="baZ-5u-Vg2"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mXP-9x-vXu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

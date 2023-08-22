@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Home Board View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MyHomeBoardViewController" customModule="HelloThere_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zfy-0A-cek">
+                                <rect key="frame" x="25" y="59" width="145" height="47"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pdt-8F-E1v">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="145" id="Zt7-h5-9xt"/>
+                                            <constraint firstAttribute="height" constant="25" id="hJd-9k-mUY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나만의 홈테리어" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXj-it-yWb">
+                                        <rect key="frame" x="0.0" y="30" width="145" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oUd-sm-aCJ">
+                                <rect key="frame" x="20" y="146" width="374" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egv-8v-vNr">
+                                <rect key="frame" x="303.5" y="74" width="85.5" height="32"/>
+                                <color key="tintColor" red="0.36593115329999998" green="0.7980523705" blue="0.64312279220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="write" imagePadding="3">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="글 쓰기">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zfy-0A-cek" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="15" id="9Lo-ha-IAx"/>
+                            <constraint firstItem="oUd-sm-aCJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9b2-MS-w05"/>
+                            <constraint firstItem="zfy-0A-cek" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="I7m-ch-QHb"/>
+                            <constraint firstItem="egv-8v-vNr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="aYx-Yq-Yiw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="egv-8v-vNr" secondAttribute="trailing" constant="25" id="d2v-0G-VEC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oUd-sm-aCJ" secondAttribute="bottom" id="f28-IS-ffc"/>
+                            <constraint firstItem="oUd-sm-aCJ" firstAttribute="top" secondItem="zfy-0A-cek" secondAttribute="bottom" constant="40" id="ggD-Ng-g0R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oUd-sm-aCJ" secondAttribute="trailing" constant="20" id="wrf-Y8-udL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="oUd-sm-aCJ" id="CQc-VU-MwE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="136" height="19"/>
+        <image name="write" width="15.5" height="15.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

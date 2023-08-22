@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ben-6L-Oia">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -15,15 +15,67 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-hI-ZC2">
+                                <rect key="frame" x="135" y="427.5" width="144" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="게시판 페이지">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="AppleSDGothicNeo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="A6t-cu-4qX" kind="show" id="Flr-CQ-eV8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZWS-hI-ZC2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="2JO-TR-sKb"/>
+                            <constraint firstItem="ZWS-hI-ZC2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gme-ch-njN"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="homeTab" selectedImage="homeTab" id="Tay-Yv-2IX"/>
+                    <tabBarItem key="tabBarItem" title="" image="homeTab" selectedImage="homeTab" id="npO-97-GnV"/>
+                    <navigationItem key="navigationItem" id="3dh-VO-EtJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="2337.68115942029" y="120.53571428571428"/>
+        </scene>
+        <!--BoardMain-->
+        <scene sceneID="z6q-pn-jzx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BoardMain" id="A6t-cu-4qX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LmE-vD-f7G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4e-44-FYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3192.0289855072465" y="120.53571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dY6-ZN-Lat">
+            <objects>
+                <navigationController storyboardIdentifier="HomeTabNavi" automaticallyAdjustsScrollViewInsets="NO" id="ben-6L-Oia" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="homeTab" selectedImage="homeTab" id="dku-xd-xSS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nf7-Xx-Hwk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="jaC-Be-etN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y22-dc-xRW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1427.536231884058" y="120.53571428571428"/>
         </scene>
     </scenes>
     <resources>
