@@ -17,6 +17,28 @@
 		42ADD8102A80D9D900925FE1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ADD80F2A80D9D900925FE1 /* SignInViewController.swift */; };
 		42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ADD8122A80DDE500925FE1 /* SignUp.storyboard */; };
 		42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ADD8142A80DDF500925FE1 /* SignUpViewController.swift */; };
+		42F46E2E2A9594760054D7C4 /* BoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E0E2A9594760054D7C4 /* BoardTableViewCell.xib */; };
+		42F46E2F2A9594760054D7C4 /* BoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E0F2A9594760054D7C4 /* BoardTableViewCell.swift */; };
+		42F46E302A9594760054D7C4 /* BoardWrite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E112A9594760054D7C4 /* BoardWrite.storyboard */; };
+		42F46E312A9594760054D7C4 /* BoardWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E122A9594760054D7C4 /* BoardWriteViewController.swift */; };
+		42F46E322A9594760054D7C4 /* ShopBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E152A9594760054D7C4 /* ShopBoard.storyboard */; };
+		42F46E332A9594760054D7C4 /* ShopBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E162A9594760054D7C4 /* ShopBoardViewController.swift */; };
+		42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E182A9594760054D7C4 /* ComplainBoardViewController.swift */; };
+		42F46E352A9594760054D7C4 /* ComplainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E192A9594760054D7C4 /* ComplainBoard.storyboard */; };
+		42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E1B2A9594760054D7C4 /* QnAViewController.swift */; };
+		42F46E372A9594760054D7C4 /* QnABoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E1C2A9594760054D7C4 /* QnABoard.storyboard */; };
+		42F46E382A9594760054D7C4 /* MyHomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E1E2A9594760054D7C4 /* MyHomeBoardViewController.swift */; };
+		42F46E392A9594760054D7C4 /* MyHomeBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E1F2A9594760054D7C4 /* MyHomeBoard.storyboard */; };
+		42F46E3A2A9594760054D7C4 /* InfoBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E212A9594760054D7C4 /* InfoBoard.storyboard */; };
+		42F46E3B2A9594760054D7C4 /* InfoBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E222A9594760054D7C4 /* InfoBoardViewController.swift */; };
+		42F46E3C2A9594760054D7C4 /* FreeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E242A9594760054D7C4 /* FreeBoardViewController.swift */; };
+		42F46E3D2A9594760054D7C4 /* FreeBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E252A9594760054D7C4 /* FreeBoard.storyboard */; };
+		42F46E3E2A9594760054D7C4 /* ShareBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E272A9594760054D7C4 /* ShareBoardViewController.swift */; };
+		42F46E3F2A9594760054D7C4 /* ShareBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E282A9594760054D7C4 /* ShareBoard.storyboard */; };
+		42F46E402A9594760054D7C4 /* BoardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E292A9594760054D7C4 /* BoardMain.storyboard */; };
+		42F46E412A9594760054D7C4 /* BoardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */; };
+		42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */; };
+		42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */; };
 		6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA07E51300F0E6EB0A919B /* Pods_HelloThere_iOS.framework */; };
 		E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */; };
 		E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1752A5D373900D734B5 /* AppDelegate.swift */; };
@@ -58,6 +80,28 @@
 		42ADD80F2A80D9D900925FE1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		42ADD8122A80DDE500925FE1 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		42ADD8142A80DDF500925FE1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		42F46E0E2A9594760054D7C4 /* BoardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardTableViewCell.xib; sourceTree = "<group>"; };
+		42F46E0F2A9594760054D7C4 /* BoardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardTableViewCell.swift; sourceTree = "<group>"; };
+		42F46E112A9594760054D7C4 /* BoardWrite.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoardWrite.storyboard; sourceTree = "<group>"; };
+		42F46E122A9594760054D7C4 /* BoardWriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardWriteViewController.swift; sourceTree = "<group>"; };
+		42F46E152A9594760054D7C4 /* ShopBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShopBoard.storyboard; sourceTree = "<group>"; };
+		42F46E162A9594760054D7C4 /* ShopBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E182A9594760054D7C4 /* ComplainBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplainBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E192A9594760054D7C4 /* ComplainBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComplainBoard.storyboard; sourceTree = "<group>"; };
+		42F46E1B2A9594760054D7C4 /* QnAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QnAViewController.swift; sourceTree = "<group>"; };
+		42F46E1C2A9594760054D7C4 /* QnABoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QnABoard.storyboard; sourceTree = "<group>"; };
+		42F46E1E2A9594760054D7C4 /* MyHomeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E1F2A9594760054D7C4 /* MyHomeBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyHomeBoard.storyboard; sourceTree = "<group>"; };
+		42F46E212A9594760054D7C4 /* InfoBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InfoBoard.storyboard; sourceTree = "<group>"; };
+		42F46E222A9594760054D7C4 /* InfoBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E242A9594760054D7C4 /* FreeBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E252A9594760054D7C4 /* FreeBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FreeBoard.storyboard; sourceTree = "<group>"; };
+		42F46E272A9594760054D7C4 /* ShareBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareBoardViewController.swift; sourceTree = "<group>"; };
+		42F46E282A9594760054D7C4 /* ShareBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShareBoard.storyboard; sourceTree = "<group>"; };
+		42F46E292A9594760054D7C4 /* BoardMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoardMain.storyboard; sourceTree = "<group>"; };
+		42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardMainViewController.swift; sourceTree = "<group>"; };
+		42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardShowViewController.swift; sourceTree = "<group>"; };
+		42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoardShow.storyboard; sourceTree = "<group>"; };
 		D53C4E50687C2E3D7562D935 /* Pods-HelloThere_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloThere_iOS.debug.xcconfig"; path = "Target Support Files/Pods-HelloThere_iOS/Pods-HelloThere_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = showMyComments.storyboard; sourceTree = "<group>"; };
 		E2A6A1722A5D373900D734B5 /* HelloThere_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloThere_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +201,123 @@
 			path = SignUpPage;
 			sourceTree = "<group>";
 		};
+		42F46E0C2A9594760054D7C4 /* Boards */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E0D2A9594760054D7C4 /* BoardTable */,
+				42F46E102A9594760054D7C4 /* BoardWirte */,
+				42F46E132A9594760054D7C4 /* DetailBoards */,
+				42F46E292A9594760054D7C4 /* BoardMain.storyboard */,
+				42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */,
+				42F46E2B2A9594760054D7C4 /* BoardDetail */,
+			);
+			path = Boards;
+			sourceTree = "<group>";
+		};
+		42F46E0D2A9594760054D7C4 /* BoardTable */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E0E2A9594760054D7C4 /* BoardTableViewCell.xib */,
+				42F46E0F2A9594760054D7C4 /* BoardTableViewCell.swift */,
+			);
+			path = BoardTable;
+			sourceTree = "<group>";
+		};
+		42F46E102A9594760054D7C4 /* BoardWirte */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E112A9594760054D7C4 /* BoardWrite.storyboard */,
+				42F46E122A9594760054D7C4 /* BoardWriteViewController.swift */,
+			);
+			path = BoardWirte;
+			sourceTree = "<group>";
+		};
+		42F46E132A9594760054D7C4 /* DetailBoards */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E142A9594760054D7C4 /* ShopBoard */,
+				42F46E172A9594760054D7C4 /* ComplainBoard */,
+				42F46E1A2A9594760054D7C4 /* QnABoard */,
+				42F46E1D2A9594760054D7C4 /* MyHomeBoard */,
+				42F46E202A9594760054D7C4 /* InfoBoard */,
+				42F46E232A9594760054D7C4 /* FreeBoard */,
+				42F46E262A9594760054D7C4 /* ShareBoard */,
+			);
+			path = DetailBoards;
+			sourceTree = "<group>";
+		};
+		42F46E142A9594760054D7C4 /* ShopBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E152A9594760054D7C4 /* ShopBoard.storyboard */,
+				42F46E162A9594760054D7C4 /* ShopBoardViewController.swift */,
+			);
+			path = ShopBoard;
+			sourceTree = "<group>";
+		};
+		42F46E172A9594760054D7C4 /* ComplainBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E182A9594760054D7C4 /* ComplainBoardViewController.swift */,
+				42F46E192A9594760054D7C4 /* ComplainBoard.storyboard */,
+			);
+			path = ComplainBoard;
+			sourceTree = "<group>";
+		};
+		42F46E1A2A9594760054D7C4 /* QnABoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E1B2A9594760054D7C4 /* QnAViewController.swift */,
+				42F46E1C2A9594760054D7C4 /* QnABoard.storyboard */,
+			);
+			path = QnABoard;
+			sourceTree = "<group>";
+		};
+		42F46E1D2A9594760054D7C4 /* MyHomeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E1E2A9594760054D7C4 /* MyHomeBoardViewController.swift */,
+				42F46E1F2A9594760054D7C4 /* MyHomeBoard.storyboard */,
+			);
+			path = MyHomeBoard;
+			sourceTree = "<group>";
+		};
+		42F46E202A9594760054D7C4 /* InfoBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E212A9594760054D7C4 /* InfoBoard.storyboard */,
+				42F46E222A9594760054D7C4 /* InfoBoardViewController.swift */,
+			);
+			path = InfoBoard;
+			sourceTree = "<group>";
+		};
+		42F46E232A9594760054D7C4 /* FreeBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E242A9594760054D7C4 /* FreeBoardViewController.swift */,
+				42F46E252A9594760054D7C4 /* FreeBoard.storyboard */,
+			);
+			path = FreeBoard;
+			sourceTree = "<group>";
+		};
+		42F46E262A9594760054D7C4 /* ShareBoard */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E272A9594760054D7C4 /* ShareBoardViewController.swift */,
+				42F46E282A9594760054D7C4 /* ShareBoard.storyboard */,
+			);
+			path = ShareBoard;
+			sourceTree = "<group>";
+		};
+		42F46E2B2A9594760054D7C4 /* BoardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */,
+				42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */,
+			);
+			path = BoardDetail;
+			sourceTree = "<group>";
+		};
 		DA321A7BBC578EFB34B4E721 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +356,7 @@
 		E2A6A1742A5D373900D734B5 /* HelloThere_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				42F46E0C2A9594760054D7C4 /* Boards */,
 				4248C7262A860FC4003234CA /* Utils */,
 				42ADD80C2A80D9AC00925FE1 /* SignInPages */,
 				E2A6A1B42A6E37CA00D734B5 /* MyDetailPages */,
@@ -370,16 +532,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				42ADD80E2A80D9BB00925FE1 /* SignIn.storyboard in Resources */,
+				42F46E372A9594760054D7C4 /* QnABoard.storyboard in Resources */,
 				E2A6A1932A6CF22500D734B5 /* ChatTab.storyboard in Resources */,
 				E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */,
+				42F46E402A9594760054D7C4 /* BoardMain.storyboard in Resources */,
+				42F46E302A9594760054D7C4 /* BoardWrite.storyboard in Resources */,
+				42F46E3D2A9594760054D7C4 /* FreeBoard.storyboard in Resources */,
+				42F46E2E2A9594760054D7C4 /* BoardTableViewCell.xib in Resources */,
 				E2A6A1CE2A725D5F00D734B5 /* showMyComments.storyboard in Resources */,
+				42F46E322A9594760054D7C4 /* ShopBoard.storyboard in Resources */,
 				E2A6A1D22A725E0800D734B5 /* WithDrawl.storyboard in Resources */,
+				42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */,
 				E2A6A1822A5D373B00D734B5 /* LaunchScreen.storyboard in Resources */,
 				E2A6A1952A6CF23500D734B5 /* HomeTab.storyboard in Resources */,
 				E2A6A1CA2A725CB400D734B5 /* ShowMyPost.storyboard in Resources */,
+				42F46E392A9594760054D7C4 /* MyHomeBoard.storyboard in Resources */,
 				42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */,
 				4200395F2A81E02A00461FDA /* AddressVerification.storyboard in Resources */,
+				42F46E3A2A9594760054D7C4 /* InfoBoard.storyboard in Resources */,
 				E2A6A1B62A6E3B1C00D734B5 /* AddressCell.storyboard in Resources */,
+				42F46E352A9594760054D7C4 /* ComplainBoard.storyboard in Resources */,
+				42F46E3F2A9594760054D7C4 /* ShareBoard.storyboard in Resources */,
 				E2A6A19F2A6D164D00D734B5 /* ChangePwCell.storyboard in Resources */,
 				E2A6A1BE2A6E3D7E00D734B5 /* SetMessage.storyboard in Resources */,
 				4248C72A2A8615E0003234CA /* SetAlarm.storyboard in Resources */,
@@ -439,18 +612,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F46E382A9594760054D7C4 /* MyHomeBoardViewController.swift in Sources */,
 				42ADD8102A80D9D900925FE1 /* SignInViewController.swift in Sources */,
+				42F46E332A9594760054D7C4 /* ShopBoardViewController.swift in Sources */,
+				42F46E3C2A9594760054D7C4 /* FreeBoardViewController.swift in Sources */,
+				42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */,
 				E2A6A1BC2A6E3D6A00D734B5 /* SetAlarmViewController.swift in Sources */,
 				E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */,
+				42F46E312A9594760054D7C4 /* BoardWriteViewController.swift in Sources */,
+				42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */,
 				E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */,
 				E2A6A1B82A6E3B2F00D734B5 /* AddressAuthViewController.swift in Sources */,
 				E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */,
+				42F46E2F2A9594760054D7C4 /* BoardTableViewCell.swift in Sources */,
 				E2A6A1D02A725D6C00D734B5 /* showMyCommentsViewController.swift in Sources */,
 				4248C7282A861006003234CA /* Manager.swift in Sources */,
+				42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */,
 				E2A6A17A2A5D373900D734B5 /* ViewController.swift in Sources */,
 				E2A6A1D42A725E1400D734B5 /* WithDrawlViewController.swift in Sources */,
 				42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */,
+				42F46E3E2A9594760054D7C4 /* ShareBoardViewController.swift in Sources */,
 				E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */,
+				42F46E412A9594760054D7C4 /* BoardMainViewController.swift in Sources */,
+				42F46E3B2A9594760054D7C4 /* InfoBoardViewController.swift in Sources */,
 				420039612A81E03800461FDA /* AddressVerificationViewController.swift in Sources */,
 				E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */,
 				E2A6A19B2A6CF3EB00D734B5 /* HomeTabViewController.swift in Sources */,
