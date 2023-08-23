@@ -34,8 +34,8 @@ class HomeTapViewController: UIViewController {
     var newBoardData: [BoardInfo] = []
     var hotBoardData: [BoardInfo] = []
     var userFeesData: [UserFeesInfo] = []
-    var homeTerrierData:[Home_MarketInfo] = []
-    var marketPlaceData: [Home_MarketInfo] = []
+    var homeTerrierData:[BoardMainDTO] = []
+    var marketPlaceData: [BoardMainDTO] = []
     var houseData: [HouseInfo] = []
     var address1: String?
     var address2: String?
@@ -60,7 +60,7 @@ class HomeTapViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if let accessToken = accessToken {
+        if accessToken != nil {
                    fetchDataFromServer()
                } else {
                    showLoginScreen()
@@ -68,17 +68,17 @@ class HomeTapViewController: UIViewController {
            }
     
     func fetchDataFromServer() {
-        fetchHotBoardData(with: accessToken)
-        fetchNewBoardData(with: accessToken)
-        fetchFeesData(with: accessToken)
-        fetchMarketplaceData(with: accessToken)
-        fetchHomeTerrierData(with: accessToken)
-        fetchHouseData(with: accessToken)
+        fetchHotBoardData(with: accessToken!)
+        fetchNewBoardData(with: accessToken!)
+        fetchFeesData(with: accessToken!)
+        fetchMarketplaceData(with: accessToken!)
+        fetchHomeTerrierData(with: accessToken!)
+        fetchHouseData(with: accessToken! )
         }
 
     func showLoginScreen() {
             // Storyboard에서 정의된 로그인 뷰 컨트롤러를 가져오기
-            if let signinViewController = storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController {
+            if let signInViewController = storyboard?.instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController {
                 // 로그인 화면을 모달로 표시
                 signInViewController.modalPresentationStyle = .fullScreen
                 present(signInViewController, animated: true, completion: nil)
@@ -88,7 +88,7 @@ class HomeTapViewController: UIViewController {
     func fetchMarketplaceData(with accessToken: String) {
             let headers: HTTPHeaders = ["Authorization": "Bearer \(accessToken)"]
 
-            AF.request("https://hello-there.shop/board/market/main", headers: headers).responseDecodable(of: MarketplaceResponse.self) { response in
+            AF.request("https://hello-there.shop/board/market/main", headers: headers).responseDecodable(of: HomeTerrierResponse.self) { response in
                 switch response.result {
                 case .success(let marketplaceResponse):
                     self.marketPlaceData = marketplaceResponse.result
@@ -155,11 +155,6 @@ class HomeTapViewController: UIViewController {
             // houseId 가져오는 방식 예시:
             // let houseId = getHouseIdFromAddress(address1)
 
-            guard let houseId = houseId else {
-                print("House ID가 없습니다.")
-                return
-            }
-
             let parameters: Parameters = ["houseId": houseId]
 
             AF.request("https://hello-there.shop/houses", parameters: parameters, headers: headers)
@@ -219,7 +214,7 @@ class HomeTapViewController: UIViewController {
 
         Happening.setBackgroundImage(checked ? UIImage(named: "NoHappening") : UIImage(named: "NewHappening"), for: .normal)
 
-        for (index, data) in MarketPlaceData.enumerated() {
+        for (index, data) in marketPlaceData.enumerated() {
             let imageView = HomeImage[index]
             if let imageUrl = URL(string: data.getS3Res.imgUrl),
                let imageData = try? Data(contentsOf: imageUrl),
@@ -239,7 +234,7 @@ class HomeTapViewController: UIViewController {
             ])
         }
 
-        for (index, data) in HomeTerrierData.enumerated() {
+        for (index, data) in homeTerrierData.enumerated() {
             let imageView = HomeImage[index]
             if let imageUrl = URL(string: data.getS3Res.imgUrl),
                let imageData = try? Data(contentsOf: imageUrl),
@@ -270,36 +265,32 @@ class HomeTapViewController: UIViewController {
     present(freeBoardViewController, animated: true, completion: nil)    }
 
     @IBAction func ToConflictButton(_ sender: UIButton) {
-        guard let complainBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ComplainBoardViewController") as? ComplainBoardViewController else {
-                return
-            }
-            conplainBoardViewController.modalPresentationStyle = .fullScreen
-        present(complainBoardViewController, animated: true, completion: nil)
+        let complainBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ComplainBoardViewController") as? ComplainBoardViewController
+                
+            complainBoardViewController?.modalPresentationStyle = .fullScreen
+        present(complainBoardViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToShareButton(_ sender: UIButton) {
-        shareBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShareBoardViewController") as? ShareBoardViewController else {
-                return
-            }
-            shareBoardViewController.modalPresentationStyle = .fullScreen
-            present(shareBoardViewController, animated: true, completion: nil)
+        let shareBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShareBoardViewController") as? ShareBoardViewController
+        
+        shareBoardViewController?.modalPresentationStyle = .fullScreen
+            present(shareBoardViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToMarketPlaceButton(_ sender: UIButton) {
-        shopBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShopBoardViewController") as? ShopBoardViewController else {
-                return
-            }
-            shopBoardViewController.modalPresentationStyle = .fullScreen
-            present(shopBoardViewController, animated: true, completion: nil)
+        let shopBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShopBoardViewController") as? ShopBoardViewController
+    
+            shopBoardViewController?.modalPresentationStyle = .fullScreen
+            present(shopBoardViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToInformationButton(_ sender: UIButton) {
-        infoBoardViewController = storyboard?.instantiateViewController(withIdentifier: "InfoBoardViewController") as?
-            InfoBoardViewController else {
-                return
-            }
-            infoBoardViewController.modalPresentationStyle = .fullScreen
-            present(infoBoardViewController, animated: true, completion: nil)
+        let infoBoardViewController = storyboard?.instantiateViewController(withIdentifier: "InfoBoardViewController") as?
+            InfoBoardViewController
+        
+            infoBoardViewController?.modalPresentationStyle = .fullScreen
+            present(infoBoardViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToPopularButton(_ sender: UIButton) {
@@ -307,35 +298,31 @@ class HomeTapViewController: UIViewController {
     }
 
     @IBAction func ToQuestionButton(_ sender: UIButton) {
-        qnaBoardViewController = storyboard?.instantiateViewController(withIdentifier: "QnaBoardViewController") as? QnaBoardViewController else {
-                return
-            }
-            qnaBoardViewController.modalPresentationStyle = .fullScreen
-            present(qnaBoardViewController, animated: true, comp
+        let qnaBoardViewController = storyboard?.instantiateViewController(withIdentifier: "QnAViewController") as? QnAViewController
+        
+        qnaBoardViewController?.modalPresentationStyle = .fullScreen
+        present(qnaBoardViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToSearchButton(_ sender: UIButton) {
-        guard let searchViewController = storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as? SearchViewController else {
-                return
-            }
-            searchViewController.modalPresentationStyle = .fullScreen
-            present(searchViewController, animated: true, completion: nil)
+        let searchViewController = storyboard?.instantiateViewController(withIdentifier: "SearchViewController")
+        
+            searchViewController?.modalPresentationStyle = .fullScreen
+            present(searchViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToHappening(_ sender: UIButton) {
-        guard let newHappeningViewController = storyboard?.instantiateViewController(withIdentifier: "NewHappeningViewController") as? NewHappeningViewController else {
-                return
-            }
-            newHappeningViewController.modalPresentationStyle = .fullScreen
-            present(newHappeningViewController, animated: true, completion: nil)
+        let newHappeningViewController = storyboard?.instantiateViewController(withIdentifier: "NewHappeningViewController") as? NewHappeningViewController
+        
+            newHappeningViewController?.modalPresentationStyle = .fullScreen
+            present(newHappeningViewController!, animated: true, completion: nil)
     }
 
     @IBAction func ToManageButton(_ sender: UIButton) {
-        guard let manageViewController = storyboard?.instantiateViewController(withIdentifier: "ManageViewController") as? ManageViewController else {
-                return
-            }
-            manageViewController.modalPresentationStyle = .fullScreen
-            present(manageViewController, animated: true, completion: nil)
+        let manageViewController = storyboard?.instantiateViewController(withIdentifier: "ManageViewController") as? ManageViewController
+        
+            manageViewController?.modalPresentationStyle = .fullScreen
+            present(manageViewController!, animated: true, completion: nil)
         }
 }
 struct HotBoardResponse: Codable {
@@ -373,14 +360,14 @@ struct UserFeesInfo: Codable{
     let paymentCheck: Bool
 }
 
-struct Home_MarketResponse: Codable {
+struct HomeTerrierResponse: Codable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let result: [Home_MarketInfo]
+    let result: [BoardMainDTO]
 }
 
-struct Home_MarketInfo: Codable {
+struct BoardMainDTO: Codable {
     let boardId: Int
     let boardType: String
     let title: String

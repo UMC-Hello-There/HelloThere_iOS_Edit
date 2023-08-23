@@ -40,7 +40,10 @@
 		42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */; };
 		42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */; };
 		6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA07E51300F0E6EB0A919B /* Pods_HelloThere_iOS.framework */; };
-		C6FBA7532A95D39B00A946FA /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7362A95D39B00A946FA /* NewHappeningViewController.swift */; };
+		C44CEBF52A9607C200ED9AF9 /* AdQues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7222A95D39A00A946FA /* AdQues.storyboard */; };
+		C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */; };
+		C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7182A95D39A00A946FA /* Manage.storyboard */; };
+		C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7172A95D39A00A946FA /* ManageViewController.swift */; };
 		E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */; };
 		E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1752A5D373900D734B5 /* AppDelegate.swift */; };
 		E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1772A5D373900D734B5 /* SceneDelegate.swift */; };
@@ -102,6 +105,7 @@
 		42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardMainViewController.swift; sourceTree = "<group>"; };
 		42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardShowViewController.swift; sourceTree = "<group>"; };
 		42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoardShow.storyboard; sourceTree = "<group>"; };
+		C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHappeningViewController.swift; sourceTree = "<group>"; };
 		C6FBA7042A95D39A00A946FA /* SearchingPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingPostsCell.swift; sourceTree = "<group>"; };
 		C6FBA7052A95D39A00A946FA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C6FBA7062A95D39A00A946FA /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
@@ -111,7 +115,6 @@
 		C6FBA7222A95D39A00A946FA /* AdQues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdQues.storyboard; sourceTree = "<group>"; };
 		C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostsCell.swift; sourceTree = "<group>"; };
 		C6FBA7352A95D39B00A946FA /* NewHappening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewHappening.storyboard; sourceTree = "<group>"; };
-		C6FBA7362A95D39B00A946FA /* NewHappeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewHappeningViewController.swift; path = ../../../../../../../Desktop/HelloThere_iOS/HelloThere_iOS/Mainpage/NewHappeningPage/NewHappeningViewController.swift; sourceTree = "<group>"; };
 		D53C4E50687C2E3D7562D935 /* Pods-HelloThere_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloThere_iOS.debug.xcconfig"; path = "Target Support Files/Pods-HelloThere_iOS/Pods-HelloThere_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = showMyComments.storyboard; sourceTree = "<group>"; };
 		E2A6A1722A5D373900D734B5 /* HelloThere_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloThere_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,8 +372,8 @@
 		C6FBA7322A95D39B00A946FA /* NewHappeningPage */ = {
 			isa = PBXGroup;
 			children = (
+				C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */,
 				C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */,
-				C6FBA7362A95D39B00A946FA /* NewHappeningViewController.swift */,
 				C6FBA7352A95D39B00A946FA /* NewHappening.storyboard */,
 			);
 			path = NewHappeningPage;
@@ -606,9 +609,11 @@
 				42F46E392A9594760054D7C4 /* MyHomeBoard.storyboard in Resources */,
 				42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */,
 				4200395F2A81E02A00461FDA /* AddressVerification.storyboard in Resources */,
+				C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */,
 				42F46E3A2A9594760054D7C4 /* InfoBoard.storyboard in Resources */,
 				E2A6A1B62A6E3B1C00D734B5 /* AddressCell.storyboard in Resources */,
 				42F46E352A9594760054D7C4 /* ComplainBoard.storyboard in Resources */,
+				C44CEBF52A9607C200ED9AF9 /* AdQues.storyboard in Resources */,
 				42F46E3F2A9594760054D7C4 /* ShareBoard.storyboard in Resources */,
 				E2A6A19F2A6D164D00D734B5 /* ChangePwCell.storyboard in Resources */,
 				E2A6A1BE2A6E3D7E00D734B5 /* SetMessage.storyboard in Resources */,
@@ -674,11 +679,13 @@
 				42F46E332A9594760054D7C4 /* ShopBoardViewController.swift in Sources */,
 				42F46E3C2A9594760054D7C4 /* FreeBoardViewController.swift in Sources */,
 				42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */,
+				C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */,
 				E2A6A1BC2A6E3D6A00D734B5 /* SetAlarmViewController.swift in Sources */,
 				E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */,
 				42F46E312A9594760054D7C4 /* BoardWriteViewController.swift in Sources */,
 				42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */,
 				E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */,
+				C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */,
 				E2A6A1B82A6E3B2F00D734B5 /* AddressAuthViewController.swift in Sources */,
 				E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */,
 				42F46E2F2A9594760054D7C4 /* BoardTableViewCell.swift in Sources */,
@@ -687,7 +694,6 @@
 				42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */,
 				E2A6A17A2A5D373900D734B5 /* ViewController.swift in Sources */,
 				E2A6A1D42A725E1400D734B5 /* WithDrawlViewController.swift in Sources */,
-				C6FBA7532A95D39B00A946FA /* NewHappeningViewController.swift in Sources */,
 				42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */,
 				42F46E3E2A9594760054D7C4 /* ShareBoardViewController.swift in Sources */,
 				E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */,
