@@ -61,8 +61,9 @@ class ManageViewController: UIViewController {
     @IBAction func updateExpense(_ sender: UIButton) {
         guard let expenseText = expenseTextField.text, let expense = Double(expenseText) else {
                     // 유효하지 않은 입력일 경우 처리 (예를 들어, 숫자가 아닌 문자열이 입력된 경우)
+            return
+
                     }
-                    return
             currentExpense = expense
                     RefreshChart()
     }
@@ -127,7 +128,7 @@ class ManageViewController: UIViewController {
             }
         }
     
-    func fetchDataFromAPI(for month: Int, @escaping onSuccess : ([ManageInfo]) -> Void) {
+    func fetchDataFromAPI(for month: Int, onSuccess : @escaping ([ManageInfo]) -> Void) {
         guard let accessToken = accessToken else {
             print("AccessToken이 없습니다.")
             return
