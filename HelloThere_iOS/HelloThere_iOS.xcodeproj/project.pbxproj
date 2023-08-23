@@ -75,7 +75,7 @@
 		4200395E2A81E02A00461FDA /* AddressVerification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressVerification.storyboard; sourceTree = "<group>"; };
 		420039602A81E03800461FDA /* AddressVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVerificationViewController.swift; sourceTree = "<group>"; };
 		4248C7272A861006003234CA /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
-		4248C7292A8615E0003234CA /* SetAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SetAlarm.storyboard; path = ../../../../../../.Trash/SetAlarm.storyboard; sourceTree = "<group>"; };
+		4248C7292A8615E0003234CA /* SetAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetAlarm.storyboard; sourceTree = "<group>"; };
 		42ADD80D2A80D9BB00925FE1 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		42ADD80F2A80D9D900925FE1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		42ADD8122A80DDE500925FE1 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
