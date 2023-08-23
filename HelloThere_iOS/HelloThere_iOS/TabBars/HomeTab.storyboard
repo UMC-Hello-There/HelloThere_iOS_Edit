@@ -42,7 +42,7 @@
                                                     <segue destination="ua0-1d-Y6S" kind="show" id="pGD-qM-7wb"/>
                                                 </connections>
                                             </button>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2023-07-18 오후 8.34.33" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-LG-JuL">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.g2" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-LG-JuL">
                                                 <rect key="frame" x="20" y="-17" width="146" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="146" id="ged-x7-lQR"/>
@@ -75,7 +75,10 @@
                                                     <constraint firstAttribute="height" constant="54" id="pQW-NY-2xg"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" backgroundImage="NoHappening"/>
+                                                <state key="normal" image="bell.circle" catalog="system" backgroundImage="bell.circle"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="ToHappening:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oHO-Ax-5kN"/>
                                                     <segue destination="qEX-Zd-VCQ" kind="show" id="8cR-On-nQs"/>
@@ -88,9 +91,7 @@
                                                     <constraint firstAttribute="width" secondItem="xhd-of-hOm" secondAttribute="height" multiplier="57:56" id="pvF-l7-d6t"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <backgroundConfiguration key="background" image="스크린샷 2023-07-18 오후 8.34.54"/>
-                                                </buttonConfiguration>
+                                                <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
                                                     <action selector="ToSearchButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8B3-j0-O4h"/>
                                                     <segue destination="czl-Fu-wYU" kind="show" id="aEb-QM-5Gp"/>
@@ -146,7 +147,7 @@
                                                     <constraint firstAttribute="height" constant="38" id="BhV-dt-dr2"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUA-UU-jeq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="157,000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUA-UU-jeq">
                                                 <rect key="frame" x="232" y="238" width="89" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="89" id="TBu-kE-ldt"/>
@@ -417,21 +418,21 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JaQ-0c-IhA">
                                                         <rect key="frame" x="0.0" y="0.0" width="770" height="150"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2no-8t-Fn9">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home1" translatesAutoresizingMaskIntoConstraints="NO" id="2no-8t-Fn9">
                                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="Z0k-qK-Ap4"/>
                                                                     <constraint firstAttribute="width" constant="120" id="w0k-lb-9xV"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fkW-cl-WQv">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home2" translatesAutoresizingMaskIntoConstraints="NO" id="fkW-cl-WQv">
                                                                 <rect key="frame" x="130" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="120" id="NY7-wP-ExO"/>
                                                                     <constraint firstAttribute="height" constant="150" id="STo-Lj-ezi"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-UH-D1l">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home3" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-UH-D1l">
                                                                 <rect key="frame" x="260" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="120" id="0JF-ai-aWh"/>
@@ -506,21 +507,21 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MFE-rw-f3g">
                                                         <rect key="frame" x="0.0" y="0.0" width="770" height="150"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lQ5-Qg-yf6">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" translatesAutoresizingMaskIntoConstraints="NO" id="lQ5-Qg-yf6">
                                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="120" id="9di-tu-srb"/>
                                                                     <constraint firstAttribute="height" constant="150" id="ebF-qE-JNs"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-5L-jx5">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoes" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-5L-jx5">
                                                                 <rect key="frame" x="130" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="GPi-MZ-X0z"/>
                                                                     <constraint firstAttribute="width" constant="120" id="SBT-tO-7S5"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C3k-Vs-Sra">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bowl" translatesAutoresizingMaskIntoConstraints="NO" id="C3k-Vs-Sra">
                                                                 <rect key="frame" x="260" y="0.0" width="120" height="150"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="150" id="NkS-CM-Cdy"/>
@@ -584,6 +585,32 @@
                                                 <color key="textColor" red="0.16862745100000001" green="0.79607843140000001" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="인기 게시물" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6J-ng-mMa">
+                                                <rect key="frame" x="51" y="139" width="65" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.16862745100000001" green="0.79607843140000001" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이달의 관리비" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snn-lo-Nbm">
+                                                <rect key="frame" x="244" y="139" width="77" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.16862745100000001" green="0.79607843140000001" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lightbulb.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="M39-mA-QEA">
+                                                <rect key="frame" x="36" y="137" width="12" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="1" green="0.49411764705882355" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newspaper.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3it-lx-92N">
+                                                <rect key="frame" x="220" y="139" width="23" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="1" green="0.4941176471" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -863,11 +890,18 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NoHappening" width="205" height="205"/>
         <image name="NoPay" width="79" height="60"/>
+        <image name="bell.circle" catalog="system" width="128" height="123"/>
+        <image name="book" width="720" height="959"/>
+        <image name="bowl" width="1024" height="1024"/>
+        <image name="home1" width="600" height="600"/>
+        <image name="home2" width="259" height="194"/>
+        <image name="home3" width="800" height="534"/>
         <image name="homeTab" width="39" height="39"/>
-        <image name="스크린샷 2023-07-18 오후 8.34.33" width="136" height="19"/>
-        <image name="스크린샷 2023-07-18 오후 8.34.54" width="41" height="38"/>
+        <image name="lightbulb.fill" catalog="system" width="92" height="128"/>
+        <image name="logo.g2" width="291" height="41"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="112"/>
+        <image name="shoes" width="400" height="400"/>
         <image name="스크린샷 2023-07-18 오후 9.21.44" width="417" height="241"/>
         <image name="스크린샷 2023-07-18 오후 9.37.13" width="18" height="24"/>
         <systemColor name="systemBackgroundColor">
