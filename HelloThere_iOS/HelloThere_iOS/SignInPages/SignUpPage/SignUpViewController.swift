@@ -65,15 +65,15 @@ class SignUpViewController: UIViewController {
                 case .success(let value):
                     let json = JSON(value)
                     print(json)
-                    let isSuccess = json["isSuccess"]
+                    let isSuccess = json["result"]
                     if isSuccess.rawValue as! Bool{
 //                        print("사용가능한 이메일")
                         self.emailErrorMessage.text = "사용가능한 이메일입니다"
                         self.emailErrorMessage.textColor =  UIColor(red: 43/255, green: 203/255, blue: 165/255, alpha: 1)
                     }else {
 //                        print("사용불가능한 이메일")
-//                        self.emailErrorMessage.text = "사용불가능한 이메일입니다"
-                        self.emailErrorMessage.text = json["message"] as! String
+                        self.emailErrorMessage.text = "사용불가능한 이메일입니다"
+//                        self.emailErrorMessage.text = json["message"] as! String
                         self.emailErrorMessage.textColor = UIColor.red
                     }
                 case .failure(let error):
@@ -148,7 +148,7 @@ class SignUpViewController: UIViewController {
             case .success(let value):
                 let json = JSON(value)
 //                print(json)
-                let isSuccess = json["isSuccess"]
+                let isSuccess = json["result"]
 
                 if isSuccess.rawValue as! Bool{
                     self.nicknameErrorMessage.textColor = UIColor(red: 43/255, green: 203/255, blue: 165/255, alpha: 1)
