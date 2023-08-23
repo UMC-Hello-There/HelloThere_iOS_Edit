@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,6 +106,7 @@
                         <segue destination="ML5-kb-lXx" kind="presentation" identifier="showMyPost" modalPresentationStyle="fullScreen" id="GQr-mw-VKt"/>
                         <segue destination="uVR-tu-Mjy" kind="presentation" identifier="showMyComments" modalPresentationStyle="fullScreen" id="3ZL-5B-6Co"/>
                         <segue destination="JEW-mJ-DKn" kind="presentation" identifier="showWithDrawl" modalPresentationStyle="fullScreen" id="d6i-aR-hMc"/>
+                        <segue destination="GQd-dO-nLC" kind="presentation" identifier="AdQues" modalPresentationStyle="fullScreen" id="h2p-UL-Iiu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,6 +176,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ioz-bx-gOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="915" y="298"/>
+        </scene>
+        <!--AdQusViewController-->
+        <scene sceneID="9Yn-xf-DLR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AdQues" storyboardName="AdQues" referencedIdentifier="AdQusViewController" id="GQd-dO-nLC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzb-if-P2u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="346"/>
         </scene>
     </scenes>
     <resources>

@@ -20,6 +20,10 @@ class ChangePasswordViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    @IBAction func moveBackToScreen(_ sender : Any) {
+        self.dismiss(animated: true)
+    }
+    
 //    변경버튼
     @IBAction func didTapPasswordModifiedButton(_ sender: Any) {
         let url = "https://hello-there.shop/users/password"

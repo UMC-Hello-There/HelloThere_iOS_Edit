@@ -16,7 +16,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nicknameTextField: UITextView!
 
-    let data = [["주소 인증","비밀번호 변경"],["푸시알림 설정","쪽지 설정"],["내 게시물","내가 댓글 단 게시물"],["로그아웃", "회원 탈퇴"]]
+    let data = [["주소 인증","비밀번호 변경"],["푸시알림 설정","쪽지 설정"],["내 게시물","내가 댓글 단 게시물"],["광고문의","로그아웃", "회원 탈퇴"]]
     let header = ["계정","설정","커뮤니티","기타"]
     
 
@@ -195,9 +195,11 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         case 3:
             switch indexPath.row{
+                
+            case 0: self.performSegue(withIdentifier: "AdQues", sender: nil)
             
             case 1:self.performSegue(withIdentifier: "showWithDrawl", sender: nil)
-            case 0:
+            case 2:
                 let sheet = UIAlertController(title: nil, message: "로그아웃 하시겠습니까?", preferredStyle: .alert)
                 sheet.addAction(UIAlertAction(title: "네", style: .default) {
                     (action) in

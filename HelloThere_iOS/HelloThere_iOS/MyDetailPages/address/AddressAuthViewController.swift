@@ -78,6 +78,10 @@ class AddressAuthViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    @IBAction func moveBackToScreen(_ sender : Any) {
+        self.dismiss(animated: true)
+    }
+    
     func sendMessage(text:String){
         let alert = UIAlertController(title: nil, message: text, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default))

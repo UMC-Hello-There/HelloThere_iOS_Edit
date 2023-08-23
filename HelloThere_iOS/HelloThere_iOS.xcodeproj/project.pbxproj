@@ -27,7 +27,6 @@
 		42F46E322A9594760054D7C4 /* ShopBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E152A9594760054D7C4 /* ShopBoard.storyboard */; };
 		42F46E332A9594760054D7C4 /* ShopBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E162A9594760054D7C4 /* ShopBoardViewController.swift */; };
 		42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E182A9594760054D7C4 /* ComplainBoardViewController.swift */; };
-		42F46E352A9594760054D7C4 /* ComplainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E192A9594760054D7C4 /* ComplainBoard.storyboard */; };
 		42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E1B2A9594760054D7C4 /* QnAViewController.swift */; };
 		42F46E372A9594760054D7C4 /* QnABoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E1C2A9594760054D7C4 /* QnABoard.storyboard */; };
 		42F46E382A9594760054D7C4 /* MyHomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E1E2A9594760054D7C4 /* MyHomeBoardViewController.swift */; };
@@ -37,12 +36,20 @@
 		42F46E3C2A9594760054D7C4 /* FreeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E242A9594760054D7C4 /* FreeBoardViewController.swift */; };
 		42F46E3D2A9594760054D7C4 /* FreeBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E252A9594760054D7C4 /* FreeBoard.storyboard */; };
 		42F46E3E2A9594760054D7C4 /* ShareBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E272A9594760054D7C4 /* ShareBoardViewController.swift */; };
-		42F46E3F2A9594760054D7C4 /* ShareBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E282A9594760054D7C4 /* ShareBoard.storyboard */; };
 		42F46E402A9594760054D7C4 /* BoardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E292A9594760054D7C4 /* BoardMain.storyboard */; };
 		42F46E412A9594760054D7C4 /* BoardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */; };
 		42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */; };
 		42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */; };
 		6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA07E51300F0E6EB0A919B /* Pods_HelloThere_iOS.framework */; };
+		C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */; };
+		C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7182A95D39A00A946FA /* Manage.storyboard */; };
+		C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7172A95D39A00A946FA /* ManageViewController.swift */; };
+		C44CEBFA2A961C9E00ED9AF9 /* NewPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */; };
+		C44CEBFB2A96295A00ED9AF9 /* NewHappening.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7352A95D39B00A946FA /* NewHappening.storyboard */; };
+		C44CEBFE2A962AFA00ED9AF9 /* ComplainBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E192A9594760054D7C4 /* ComplainBoard.storyboard */; };
+		C44CEBFF2A962B2500ED9AF9 /* ShareBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E282A9594760054D7C4 /* ShareBoard.storyboard */; };
+		C44CEC002A962B9F00ED9AF9 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7062A95D39A00A946FA /* Search.storyboard */; };
+		C44CEC012A962C8C00ED9AF9 /* AdQues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7222A95D39A00A946FA /* AdQues.storyboard */; };
 		E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */; };
 		E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1752A5D373900D734B5 /* AppDelegate.swift */; };
 		E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1772A5D373900D734B5 /* SceneDelegate.swift */; };
@@ -54,7 +61,7 @@
 		E2A6A1952A6CF23500D734B5 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */; };
 		E2A6A1972A6CF24600D734B5 /* MyPageTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1962A6CF24600D734B5 /* MyPageTab.storyboard */; };
 		E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */; };
-		E2A6A19B2A6CF3EB00D734B5 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */; };
+		E2A6A19B2A6CF3EB00D734B5 /* HomeTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A19A2A6CF3EB00D734B5 /* HomeTapViewController.swift */; };
 		E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */; };
 		E2A6A19F2A6D164D00D734B5 /* ChangePwCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A19E2A6D164D00D734B5 /* ChangePwCell.storyboard */; };
 		E2A6A1A12A6D168E00D734B5 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1A02A6D168E00D734B5 /* ChangePasswordViewController.swift */; };
@@ -65,11 +72,22 @@
 		E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1BF2A6E3D8D00D734B5 /* SetMessageViewController.swift */; };
 		E2A6A1CA2A725CB400D734B5 /* ShowMyPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1C92A725CB400D734B5 /* ShowMyPost.storyboard */; };
 		E2A6A1CC2A725CC700D734B5 /* ShowMyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1CB2A725CC700D734B5 /* ShowMyPostViewController.swift */; };
-		E2A6A1CE2A725D5F00D734B5 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1CD2A725D5F00D734B5 /* showMyComments.storyboard */; };
 		E2A6A1D02A725D6C00D734B5 /* showMyCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1CF2A725D6C00D734B5 /* showMyCommentsViewController.swift */; };
 		E2A6A1D22A725E0800D734B5 /* WithDrawl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2A6A1D12A725E0800D734B5 /* WithDrawl.storyboard */; };
 		E2A6A1D42A725E1400D734B5 /* WithDrawlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1D32A725E1400D734B5 /* WithDrawlViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C44CEBFD2A962A6D00ED9AF9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A5D588C9065909C57B82CD1 /* Pods-HelloThere_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloThere_iOS.release.xcconfig"; path = "Target Support Files/Pods-HelloThere_iOS/Pods-HelloThere_iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,6 +126,16 @@
 		42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardMainViewController.swift; sourceTree = "<group>"; };
 		42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardShowViewController.swift; sourceTree = "<group>"; };
 		42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BoardShow.storyboard; sourceTree = "<group>"; };
+		C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewHappeningViewController.swift; sourceTree = "<group>"; };
+		C6FBA7042A95D39A00A946FA /* SearchingPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingPostsCell.swift; sourceTree = "<group>"; };
+		C6FBA7052A95D39A00A946FA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C6FBA7062A95D39A00A946FA /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		C6FBA7172A95D39A00A946FA /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		C6FBA7182A95D39A00A946FA /* Manage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Manage.storyboard; sourceTree = "<group>"; };
+		C6FBA7212A95D39A00A946FA /* AdQusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdQusViewController.swift; sourceTree = "<group>"; };
+		C6FBA7222A95D39A00A946FA /* AdQues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdQues.storyboard; sourceTree = "<group>"; };
+		C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostsCell.swift; sourceTree = "<group>"; };
+		C6FBA7352A95D39B00A946FA /* NewHappening.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewHappening.storyboard; sourceTree = "<group>"; };
 		D53C4E50687C2E3D7562D935 /* Pods-HelloThere_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloThere_iOS.debug.xcconfig"; path = "Target Support Files/Pods-HelloThere_iOS/Pods-HelloThere_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = showMyComments.storyboard; sourceTree = "<group>"; };
 		E2A6A1722A5D373900D734B5 /* HelloThere_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloThere_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +150,7 @@
 		E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		E2A6A1962A6CF24600D734B5 /* MyPageTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPageTab.storyboard; sourceTree = "<group>"; };
 		E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTabViewController.swift; sourceTree = "<group>"; };
-		E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		E2A6A19A2A6CF3EB00D734B5 /* HomeTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTapViewController.swift; sourceTree = "<group>"; };
 		E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		E2A6A19E2A6D164D00D734B5 /* ChangePwCell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePwCell.storyboard; sourceTree = "<group>"; };
 		E2A6A1A02A6D168E00D734B5 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +161,6 @@
 		E2A6A1BF2A6E3D8D00D734B5 /* SetMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMessageViewController.swift; sourceTree = "<group>"; };
 		E2A6A1C92A725CB400D734B5 /* ShowMyPost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowMyPost.storyboard; sourceTree = "<group>"; };
 		E2A6A1CB2A725CC700D734B5 /* ShowMyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMyPostViewController.swift; sourceTree = "<group>"; };
-		E2A6A1CD2A725D5F00D734B5 /* showMyComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = showMyComments.storyboard; sourceTree = "<group>"; };
 		E2A6A1CF2A725D6C00D734B5 /* showMyCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showMyCommentsViewController.swift; sourceTree = "<group>"; };
 		E2A6A1D12A725E0800D734B5 /* WithDrawl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WithDrawl.storyboard; sourceTree = "<group>"; };
 		E2A6A1D32A725E1400D734B5 /* WithDrawlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithDrawlViewController.swift; sourceTree = "<group>"; };
@@ -341,6 +368,55 @@
 			path = BoardDetail;
 			sourceTree = "<group>";
 		};
+		C6FBA7022A95D39A00A946FA /* Mainpage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FBA7032A95D39A00A946FA /* SearchPage */,
+				C6FBA7202A95D39A00A946FA /* AdQusPage */,
+				C6FBA7322A95D39B00A946FA /* NewHappeningPage */,
+				C6FBA70E2A95D39A00A946FA /* ManagePage */,
+			);
+			path = Mainpage;
+			sourceTree = "<group>";
+		};
+		C6FBA7032A95D39A00A946FA /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FBA7042A95D39A00A946FA /* SearchingPostsCell.swift */,
+				C6FBA7052A95D39A00A946FA /* SearchViewController.swift */,
+				C6FBA7062A95D39A00A946FA /* Search.storyboard */,
+			);
+			path = SearchPage;
+			sourceTree = "<group>";
+		};
+		C6FBA70E2A95D39A00A946FA /* ManagePage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FBA7172A95D39A00A946FA /* ManageViewController.swift */,
+				C6FBA7182A95D39A00A946FA /* Manage.storyboard */,
+			);
+			path = ManagePage;
+			sourceTree = "<group>";
+		};
+		C6FBA7202A95D39A00A946FA /* AdQusPage */ = {
+			isa = PBXGroup;
+			children = (
+				C6FBA7212A95D39A00A946FA /* AdQusViewController.swift */,
+				C6FBA7222A95D39A00A946FA /* AdQues.storyboard */,
+			);
+			path = AdQusPage;
+			sourceTree = "<group>";
+		};
+		C6FBA7322A95D39B00A946FA /* NewHappeningPage */ = {
+			isa = PBXGroup;
+			children = (
+				C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */,
+				C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */,
+				C6FBA7352A95D39B00A946FA /* NewHappening.storyboard */,
+			);
+			path = NewHappeningPage;
+			sourceTree = "<group>";
+		};
 		DA321A7BBC578EFB34B4E721 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,7 +455,7 @@
 		E2A6A1742A5D373900D734B5 /* HelloThere_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				42E107022A95CE8B00192959 /* ChattingPage */,
+				C6FBA7022A95D39A00A946FA /* Mainpage */,
 				42F46E0C2A9594760054D7C4 /* Boards */,
 				4248C7262A860FC4003234CA /* Utils */,
 				42ADD80C2A80D9AC00925FE1 /* SignInPages */,
@@ -399,8 +475,7 @@
 				E2A6A1942A6CF23500D734B5 /* HomeTab.storyboard */,
 				E2A6A1922A6CF22500D734B5 /* ChatTab.storyboard */,
 				E2A6A1982A6CF3DB00D734B5 /* ChatTabViewController.swift */,
-				42E1070A2A95DB2E00192959 /* ChattingTableViewCell.swift */,
-				E2A6A19A2A6CF3EB00D734B5 /* HomeTabViewController.swift */,
+				E2A6A19A2A6CF3EB00D734B5 /* HomeTapViewController.swift */,
 				E2A6A19C2A6CF3F900D734B5 /* MyPageViewController.swift */,
 			);
 			path = TabBars;
@@ -480,7 +555,6 @@
 		E2A6A1C72A725C7500D734B5 /* MyComments */ = {
 			isa = PBXGroup;
 			children = (
-				E2A6A1CD2A725D5F00D734B5 /* showMyComments.storyboard */,
 				E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */,
 				E2A6A1CF2A725D6C00D734B5 /* showMyCommentsViewController.swift */,
 			);
@@ -508,6 +582,7 @@
 				E2A6A16F2A5D373900D734B5 /* Frameworks */,
 				E2A6A1702A5D373900D734B5 /* Resources */,
 				5CB54EC2CC1BA987DBEBFF18 /* [CP] Embed Pods Frameworks */,
+				C44CEBFD2A962A6D00ED9AF9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -556,29 +631,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44CEBFE2A962AFA00ED9AF9 /* ComplainBoard.storyboard in Resources */,
 				42ADD80E2A80D9BB00925FE1 /* SignIn.storyboard in Resources */,
 				42F46E372A9594760054D7C4 /* QnABoard.storyboard in Resources */,
 				E2A6A1932A6CF22500D734B5 /* ChatTab.storyboard in Resources */,
 				E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */,
 				42F46E402A9594760054D7C4 /* BoardMain.storyboard in Resources */,
 				42F46E302A9594760054D7C4 /* BoardWrite.storyboard in Resources */,
-				42F46E3D2A9594760054D7C4 /* FreeBoard.storyboard in Resources */,
 				42F46E2E2A9594760054D7C4 /* BoardTableViewCell.xib in Resources */,
-				E2A6A1CE2A725D5F00D734B5 /* showMyComments.storyboard in Resources */,
 				42F46E322A9594760054D7C4 /* ShopBoard.storyboard in Resources */,
 				E2A6A1D22A725E0800D734B5 /* WithDrawl.storyboard in Resources */,
 				42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */,
 				E2A6A1822A5D373B00D734B5 /* LaunchScreen.storyboard in Resources */,
 				E2A6A1952A6CF23500D734B5 /* HomeTab.storyboard in Resources */,
 				E2A6A1CA2A725CB400D734B5 /* ShowMyPost.storyboard in Resources */,
+				42F46E3D2A9594760054D7C4 /* FreeBoard.storyboard in Resources */,
 				42F46E392A9594760054D7C4 /* MyHomeBoard.storyboard in Resources */,
 				42ADD8132A80DDE500925FE1 /* SignUp.storyboard in Resources */,
 				4200395F2A81E02A00461FDA /* AddressVerification.storyboard in Resources */,
-				42E107052A95CEA900192959 /* ChatList.storyboard in Resources */,
+				C44CEC002A962B9F00ED9AF9 /* Search.storyboard in Resources */,
+				C44CEBFB2A96295A00ED9AF9 /* NewHappening.storyboard in Resources */,
+				C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */,
 				42F46E3A2A9594760054D7C4 /* InfoBoard.storyboard in Resources */,
 				E2A6A1B62A6E3B1C00D734B5 /* AddressCell.storyboard in Resources */,
-				42F46E352A9594760054D7C4 /* ComplainBoard.storyboard in Resources */,
-				42F46E3F2A9594760054D7C4 /* ShareBoard.storyboard in Resources */,
+				C44CEC012A962C8C00ED9AF9 /* AdQues.storyboard in Resources */,
+				C44CEBFF2A962B2500ED9AF9 /* ShareBoard.storyboard in Resources */,
 				E2A6A19F2A6D164D00D734B5 /* ChangePwCell.storyboard in Resources */,
 				E2A6A1BE2A6E3D7E00D734B5 /* SetMessage.storyboard in Resources */,
 				4248C72A2A8615E0003234CA /* SetAlarm.storyboard in Resources */,
@@ -643,11 +720,14 @@
 				42F46E332A9594760054D7C4 /* ShopBoardViewController.swift in Sources */,
 				42F46E3C2A9594760054D7C4 /* FreeBoardViewController.swift in Sources */,
 				42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */,
+				C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */,
 				E2A6A1BC2A6E3D6A00D734B5 /* SetAlarmViewController.swift in Sources */,
+				C44CEBFA2A961C9E00ED9AF9 /* NewPostsCell.swift in Sources */,
 				E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */,
 				42F46E312A9594760054D7C4 /* BoardWriteViewController.swift in Sources */,
 				42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */,
 				E2A6A1992A6CF3DB00D734B5 /* ChatTabViewController.swift in Sources */,
+				C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */,
 				E2A6A1B82A6E3B2F00D734B5 /* AddressAuthViewController.swift in Sources */,
 				E2A6A19D2A6CF3F900D734B5 /* MyPageViewController.swift in Sources */,
 				42F46E2F2A9594760054D7C4 /* BoardTableViewCell.swift in Sources */,
@@ -665,7 +745,7 @@
 				42E1070B2A95DB2E00192959 /* ChattingTableViewCell.swift in Sources */,
 				42E107072A95CEB200192959 /* ChatListViewController.swift in Sources */,
 				E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */,
-				E2A6A19B2A6CF3EB00D734B5 /* HomeTabViewController.swift in Sources */,
+				E2A6A19B2A6CF3EB00D734B5 /* HomeTapViewController.swift in Sources */,
 				4200395A2A81DD4F00461FDA /* SignUpGuideViewController.swift in Sources */,
 				E2A6A1A12A6D168E00D734B5 /* ChangePasswordViewController.swift in Sources */,
 				E2A6A1CC2A725CC700D734B5 /* ShowMyPostViewController.swift in Sources */,
