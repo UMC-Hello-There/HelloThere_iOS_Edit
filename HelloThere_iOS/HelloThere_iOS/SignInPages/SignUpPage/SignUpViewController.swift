@@ -57,7 +57,7 @@ class SignUpViewController: UIViewController {
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         let emailCheck = emailTest.evaluate(with: email)
         
-        let urlEmail = "http://3.37.126.149:8080/users/check-email?email=\(email)"
+        let urlEmail = "https://hello-there.shop/users/check-email?email=\(email)"
         
         if emailCheck {
             AF.request(urlEmail, method: .get).validate().responseJSON { response in
@@ -65,7 +65,7 @@ class SignUpViewController: UIViewController {
                 case .success(let value):
                     let json = JSON(value)
                     print(json)
-                    let isSuccess = json["result"]
+                    let isSuccess = json["isSuccess"]
                     if isSuccess.rawValue as! Bool{
 //                        print("사용가능한 이메일")
                         self.emailErrorMessage.text = "사용가능한 이메일입니다"
@@ -139,7 +139,7 @@ class SignUpViewController: UIViewController {
     }
     
     func isNicknameValidate(nickname: String) {
-        let urlNickname = "http://3.37.126.149:8080/users/check-nickname?nickName=\(nickname)"
+        let urlNickname = "https://hello-there.shop/users/check-nickname?nickName=\(nickname)"
         let encodedStr = urlNickname.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! // 닉네임이 한국어로 들어가는 경우
         let url = URL(string: encodedStr)!
         
@@ -148,7 +148,7 @@ class SignUpViewController: UIViewController {
             case .success(let value):
                 let json = JSON(value)
 //                print(json)
-                let isSuccess = json["result"]
+                let isSuccess = json["isSuccess"]
 
                 if isSuccess.rawValue as! Bool{
                     self.nicknameErrorMessage.textColor = UIColor(red: 43/255, green: 203/255, blue: 165/255, alpha: 1)
@@ -172,7 +172,7 @@ class SignUpViewController: UIViewController {
     }
     
     func isSignUpValidate(nickName:String, email:String, password:String, passwordChk:String){
-        let url = "http://3.37.126.149:8080/users"
+        let url = "https://hello-there.shop/users"
         struct SignUpResult: Codable {
             let isSuccess: Bool
             let code: Int
