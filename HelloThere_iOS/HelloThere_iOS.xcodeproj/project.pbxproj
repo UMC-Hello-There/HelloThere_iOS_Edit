@@ -38,6 +38,7 @@
 		42F46E412A9594760054D7C4 /* BoardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2A2A9594760054D7C4 /* BoardMainViewController.swift */; };
 		42F46E422A9594760054D7C4 /* BoardShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F46E2C2A9594760054D7C4 /* BoardShowViewController.swift */; };
 		42F46E432A9594760054D7C4 /* BoardShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F46E2D2A9594760054D7C4 /* BoardShow.storyboard */; };
+		42FA813A2A967EFF004BFFF6 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 42FA81392A967EFF004BFFF6 /* DGCharts */; };
 		6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EA07E51300F0E6EB0A919B /* Pods_HelloThere_iOS.framework */; };
 		C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */; };
 		C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7182A95D39A00A946FA /* Manage.storyboard */; };
@@ -174,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FA813A2A967EFF004BFFF6 /* DGCharts in Frameworks */,
 				6E2E1B11E74D92F7B3870801 /* Pods_HelloThere_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +605,9 @@
 			dependencies = (
 			);
 			name = HelloThere_iOS;
+			packageProductDependencies = (
+				42FA81392A967EFF004BFFF6 /* DGCharts */,
+			);
 			productName = HelloThere_iOS;
 			productReference = E2A6A1722A5D373900D734B5 /* HelloThere_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -631,6 +636,9 @@
 				Base,
 			);
 			mainGroup = E2A6A1692A5D373900D734B5;
+			packageReferences = (
+				42FA81382A967EFF004BFFF6 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = E2A6A1732A5D373900D734B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -924,6 +932,19 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"NMapsGeometry\"",
+					"-framework",
+					"\"NMapsMap\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.HelloThere-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -983,6 +1004,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42FA81382A967EFF004BFFF6 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42FA81392A967EFF004BFFF6 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FA81382A967EFF004BFFF6 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2A6A16A2A5D373900D734B5 /* Project object */;
 }

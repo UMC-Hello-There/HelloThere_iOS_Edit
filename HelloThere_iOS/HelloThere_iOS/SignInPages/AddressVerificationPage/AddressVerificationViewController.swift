@@ -15,7 +15,7 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
     
     var locationManager = CLLocationManager()
     var marker = NMFMarker()
-    let addressInfoLabel = UILabel(frame: CGRectMake(35, 739, 322, 43)) // 도로명 주소를 표시하는 라벨
+    let addressInfoLabel = UILabel(frame: CGRectMake(35, 690, 322, 43)) // 도로명 주소를 표시하는 라벨
     
     var userAddress:String = ""
     var userAddressInfo:String = ""
@@ -32,8 +32,8 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
         
 //        도로명 주소를 표시하는 라벨
         addressInfoLabel.textAlignment = .center
-        addressInfoLabel.layer.borderColor = UIColor.black.cgColor
-        addressInfoLabel.layer.borderWidth = 0.5
+//        addressInfoLabel.layer.borderColor = UIColor.black.cgColor
+//        addressInfoLabel.layer.borderWidth = 0.5
         addressInfoLabel.layer.cornerRadius = 20
         addressInfoLabel.layer.masksToBounds = true
         addressInfoLabel.font = addressInfoLabel.font.withSize(12)
@@ -42,7 +42,7 @@ class AddressVerificationViewController: UIViewController, CLLocationManagerDele
         addressInfoLabel.text = ""
 
 //        네이버 맵 띄우기
-        let naverMap = NMFNaverMapView(frame: CGRectMake(0, 123, 393, 637))
+        let naverMap = NMFNaverMapView(frame: CGRectMake(0, 123, 393, 585))
         let mapView = naverMap.mapView
         naverMap.showLocationButton = true
         mapView.touchDelegate = self

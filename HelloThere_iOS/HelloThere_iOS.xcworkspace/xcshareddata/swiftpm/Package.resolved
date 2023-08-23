@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "charts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/danielgindi/Charts.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "e516b04834b6e2072367f1366750c01c164e6545"
+      }
+    }
+  ],
+  "version" : 2
+}

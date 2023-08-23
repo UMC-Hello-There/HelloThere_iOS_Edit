@@ -7,13 +7,13 @@
 
 import UIKit
 import Alamofire
-import DGCharts
+//import DGCharts
 
 class ManageViewController: UIViewController {
     @IBOutlet weak var MonthSelectButton: UIButton!
     @IBOutlet weak var expenseTextField: UITextField!
     @IBOutlet weak var updateButton: UIButton!
-    @IBOutlet weak var BarChart: BarChartView!
+//    @IBOutlet weak var BarChart: BarChartView!
     @IBOutlet weak var completeButton: UIButton!
     @IBOutlet weak var completeImageView: UIImageView!
     @IBOutlet weak var unpaidButton: UIButton!
@@ -32,7 +32,7 @@ class ManageViewController: UIViewController {
         
         // 월 선택 버튼 설정
         setMonthSelectButton()
-        setChartData()
+//        setChartData()
         
     }
     
@@ -114,10 +114,10 @@ class ManageViewController: UIViewController {
         
         return outputValue
     }
-    func setChartData() {
-               let data = BarChartData()
-               BarChart.data = data
-           }
+//    func setChartData() {
+//               let data = BarChartData()
+//               BarChart.data = data
+//           }
     func parseManageInfoResponse(_ jsonData: Data) -> [ManageInfo] {
             do {
                 let manageInfos = try JSONDecoder().decode([ManageInfo].self, from: jsonData)
@@ -256,7 +256,7 @@ class ManageViewController: UIViewController {
             let currentMonth = Calendar.current.component(.month, from: Date())
             let selectedMonthIndex = currentMonth - 3 ..< currentMonth // 선택 월과 이전 2개월
 
-            var entries = [BarChartDataEntry]()
+//            var entries = [BarChartDataEntry]()
             var maxYValue: Double = 0 // y축 최대 값 초기화
 
             for i in selectedMonthIndex {
@@ -269,31 +269,31 @@ class ManageViewController: UIViewController {
                 }
                 maxYValue = max(maxYValue, yValue) // 최대 값 갱신
 
-                entries.append(BarChartDataEntry(x: Double(i), y: yValue))
+//                entries.append(BarChartDataEntry(x: Double(i), y: yValue))
             }
 
-            let dataSet = BarChartDataSet(entries: entries, label: "월별 데이터")
-            dataSet.colors = [UIColor(red: 69/255, green: 207/255, blue: 148/255, alpha: 1.0)] // 그래프 색상 설정
+//            let dataSet = BarChartDataSet(entries: entries, label: "월별 데이터")
+//            dataSet.colors = [UIColor(red: 69/255, green: 207/255, blue: 148/255, alpha: 1.0)] // 그래프 색상 설정
 
             // 납부 여부에 따라 그래프 색상 변경
-            if paymentStatus {
-                dataSet.colors = [UIColor(red: 243/255, green: 72/255, blue: 34/255, alpha: 1.0)] // 미납인 경우 색상 변경
-            } else {
-                dataSet.colors = [UIColor(red: 69/255, green: 207/255, blue: 148/255, alpha: 1.0)] // 완납인 경우 색상 변경
-            }
+//            if paymentStatus {
+//                dataSet.colors = [UIColor(red: 243/255, green: 72/255, blue: 34/255, alpha: 1.0)] // 미납인 경우 색상 변경
+//            } else {
+//                dataSet.colors = [UIColor(red: 69/255, green: 207/255, blue: 148/255, alpha: 1.0)] // 완납인 경우 색상 변경
+//            }
 
-            dataSet.valueTextColor = UIColor.white // 값 텍스트 색상 설정
+//            dataSet.valueTextColor = UIColor.white // 값 텍스트 색상 설정
 
-            let data = BarChartData(dataSet: dataSet)
+//            let data = BarChartData(dataSet: dataSet)
 
             // x축 설정
-            BarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: selectedMonthIndex.map { "\($0)월" }) // x축 레이블 포맷 설정
+//            BarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: selectedMonthIndex.map { "\($0)월" }) // x축 레이블 포맷 설정
 
             // y축 설정
-            BarChart.leftAxis.axisMinimum = 0 // y축 최소 값 설정
-            BarChart.leftAxis.axisMaximum = maxYValue + 10 // y축 최대 값 설정 (최대 값보다 약간 높게 설정)
+//            BarChart.leftAxis.axisMinimum = 0 // y축 최소 값 설정
+//            BarChart.leftAxis.axisMaximum = maxYValue + 10 // y축 최대 값 설정 (최대 값보다 약간 높게 설정)
 
-            BarChart.data = data
+//            BarChart.data = data
         }
     }
 struct ManageInfo: Codable {
