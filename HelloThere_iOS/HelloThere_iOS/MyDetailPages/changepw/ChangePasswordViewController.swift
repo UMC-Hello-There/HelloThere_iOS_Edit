@@ -22,7 +22,7 @@ class ChangePasswordViewController: UIViewController {
     
 //    변경버튼
     @IBAction func didTapPasswordModifiedButton(_ sender: Any) {
-        let url = "http://3.37.126.149:8080/users/password"
+        let url = "https://hello-there.shop/users/password"
         
         struct PasswordModifiedResult: Codable {
             let isSuccess: Bool

@@ -83,7 +83,7 @@ class SignInViewController: UIViewController {
                         print(">>")
                         print(json.result?.accessToken)
                         defaults.set(json.result?.accessToken, forKey: "accessToken")
-                        self.signInErrorMessageLabel.text = "성공✅"
+//                        self.signInErrorMessageLabel.text = "성공✅"
                         
                         let nextStoryBoard = UIStoryboard(name: "Main", bundle: nil)
                         let nextViewController = nextStoryBoard.instantiateViewController(identifier: "Main")

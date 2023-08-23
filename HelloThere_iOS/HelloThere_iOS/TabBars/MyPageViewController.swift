@@ -42,7 +42,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 //    닉네임 변경 버튼을 클릭했을 때
     @IBAction func didTapModifiedNicknameButton(_ sender: Any) {
-        let urlNickname = "http://3.37.126.149:8080/users/nickname?nickName=\(nicknameTextField.text ?? "")"
+        let urlNickname = "https://hello-there.shop/users/nickname?nickName=\(nicknameTextField.text ?? "")"
         let encodedStr = urlNickname.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! // 닉네임이 한국어로 들어가는 경우
         let url = URL(string: encodedStr)!
 
@@ -69,7 +69,6 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
                             self.sendMessage(text: "닉네임이 변경되었습니다")
                         } else {
                             self.sendMessage(text: json.message)
-                            self.nicknameTextField.text = ""
                         }
                     } catch{
                         print("닉네임 변경 실패")
@@ -177,7 +176,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 sheet.addAction(UIAlertAction(title: "네", style: .default) {
                     (action) in
                     
-                    let url = "http://3.37.126.149:8080/users/log-out"
+                    let url = "https://hello-there.shop/users/log-out"
                     
                     struct SignOutResult: Codable {
                         let isSuccess: Bool
