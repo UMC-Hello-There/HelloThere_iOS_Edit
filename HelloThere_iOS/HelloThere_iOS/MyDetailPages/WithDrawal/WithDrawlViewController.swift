@@ -14,6 +14,9 @@ class WithDrawlViewController: UIViewController {
     @IBOutlet weak var agreementTextField: UITextField!
     @IBOutlet weak var agreementErrorMessage: UILabel!
     
+    @IBAction func moveBackToScreen(_ sender : Any) {
+        self.dismiss(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
