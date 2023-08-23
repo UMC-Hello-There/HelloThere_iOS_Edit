@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ben-6L-Oia">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ben-6L-Oia">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -811,20 +811,20 @@
             </objects>
             <point key="canvasLocation" x="2895" y="392"/>
         </scene>
-        <!--QnaBoardViewController-->
+        <!--QnAViewController-->
         <scene sceneID="tMK-1b-fUc">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="QnaBoardViewController" storyboardName="QnaBoard" referencedIdentifier="QnaBoardViewController" id="fed-wx-ENJ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="QnAViewController" storyboardName="QnABoard" referencedIdentifier="QnAViewController" id="fed-wx-ENJ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vnm-hR-Ft5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lue-1n-IO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2900" y="330"/>
         </scene>
-        <!--InfoBoardViewCOntroller-->
+        <!--InfoBoardViewController-->
         <scene sceneID="a4x-3R-5A2">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="InfoBoardViewController" storyboardName="InfoBoard" referencedIdentifier="InfoBoardViewCOntroller" id="bCV-ls-MpO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="InfoBoardViewController" storyboardName="InfoBoard" referencedIdentifier="InfoBoardViewController" id="bCV-ls-MpO" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lsj-I7-JYd"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P08-td-tCr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

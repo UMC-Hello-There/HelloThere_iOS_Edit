@@ -286,8 +286,7 @@ class HomeTapViewController: UIViewController {
     }
 
     @IBAction func ToInformationButton(_ sender: UIButton) {
-        let infoBoardViewController = storyboard?.instantiateViewController(withIdentifier: "InfoBoardViewController") as?
-            InfoBoardViewController
+        let infoBoardViewController = storyboard?.instantiateViewController(withIdentifier: "InfoBoardViewController") as? InfoBoardViewController
         
             infoBoardViewController?.modalPresentationStyle = .fullScreen
             present(infoBoardViewController!, animated: true, completion: nil)
