@@ -14,6 +14,4 @@ class TabBarController: UITabBarController {
 
         self.selectedIndex = 1
     }
-    
-
 }

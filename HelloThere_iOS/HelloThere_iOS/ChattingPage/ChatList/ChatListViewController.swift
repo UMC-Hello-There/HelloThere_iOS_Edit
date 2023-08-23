@@ -14,4 +14,7 @@ class ChatListViewController: UIViewController {
 
     }
     
+    @IBAction func didTapBackButton(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
 }
