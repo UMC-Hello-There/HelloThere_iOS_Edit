@@ -60,7 +60,7 @@ class SignInViewController: UIViewController {
             "password" : password
         ]
         
-        let url = "http://3.37.126.149:8080/users/log-in"
+        let url = "https://hello-there.shop/users/log-in"
         
         AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default).responseJSON {
             response in
