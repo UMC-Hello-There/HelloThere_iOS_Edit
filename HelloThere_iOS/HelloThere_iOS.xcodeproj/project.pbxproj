@@ -44,6 +44,7 @@
 		C44CEBF72A9613E000ED9AF9 /* NewHappeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44CEBF62A9613E000ED9AF9 /* NewHappeningViewController.swift */; };
 		C44CEBF82A96148C00ED9AF9 /* Manage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6FBA7182A95D39A00A946FA /* Manage.storyboard */; };
 		C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7172A95D39A00A946FA /* ManageViewController.swift */; };
+		C44CEBFA2A961C9E00ED9AF9 /* NewPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBA7332A95D39B00A946FA /* NewPostsCell.swift */; };
 		E299EBB22A80C94F0066FFF4 /* showMyComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E299EBB12A80C94F0066FFF4 /* showMyComments.storyboard */; };
 		E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1752A5D373900D734B5 /* AppDelegate.swift */; };
 		E2A6A1782A5D373900D734B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A6A1772A5D373900D734B5 /* SceneDelegate.swift */; };
@@ -681,6 +682,7 @@
 				42F46E342A9594760054D7C4 /* ComplainBoardViewController.swift in Sources */,
 				C44CEBF92A96148F00ED9AF9 /* ManageViewController.swift in Sources */,
 				E2A6A1BC2A6E3D6A00D734B5 /* SetAlarmViewController.swift in Sources */,
+				C44CEBFA2A961C9E00ED9AF9 /* NewPostsCell.swift in Sources */,
 				E2A6A1C02A6E3D8D00D734B5 /* SetMessageViewController.swift in Sources */,
 				42F46E312A9594760054D7C4 /* BoardWriteViewController.swift in Sources */,
 				42F46E362A9594760054D7C4 /* QnAViewController.swift in Sources */,
