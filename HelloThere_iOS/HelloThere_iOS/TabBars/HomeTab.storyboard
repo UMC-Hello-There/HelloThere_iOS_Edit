@@ -60,8 +60,8 @@
                                                     <color key="baseForegroundColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awv-mB-kMc">
-                                                <rect key="frame" x="8" y="75" width="217" height="34.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awv-mB-kMc">
+                                                <rect key="frame" x="8" y="75" width="385" height="35"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="주소">
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
@@ -172,6 +172,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                                     <color key="baseForegroundColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="didTapBoardButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="i9L-cK-Y19"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suit.diamond.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iwa-o5-zyc">
                                                 <rect key="frame" x="14.5" y="388" width="12" height="15"/>

@@ -69,9 +69,12 @@
                                                         <constraint firstAttribute="width" constant="38" id="syy-tY-DkU"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="chattingLastTime" text="오후 23:28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-lG-KcC" customClass="chattingLastTime">
-                                                    <rect key="frame" x="337" y="10" width="64" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="chattingLastTime" text="오후 23:28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-lG-KcC" customClass="chattingLastTime">
+                                                    <rect key="frame" x="311" y="11" width="64" height="17"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="64" id="6cO-5E-QQK"/>
+                                                        <constraint firstAttribute="height" constant="17" id="iTP-p5-Qkf"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                     <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -79,7 +82,9 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="eSO-G3-7fz" firstAttribute="leading" secondItem="f3c-uk-TXm" secondAttribute="leadingMargin" constant="7" id="FbD-Rw-ygm"/>
+                                                <constraint firstItem="MdD-lG-KcC" firstAttribute="centerY" secondItem="f3c-uk-TXm" secondAttribute="centerY" constant="-22.5" id="Qsx-qM-dxv"/>
                                                 <constraint firstItem="eSO-G3-7fz" firstAttribute="top" secondItem="f3c-uk-TXm" secondAttribute="topMargin" constant="12" id="XgH-c9-lRW"/>
+                                                <constraint firstAttribute="trailing" secondItem="MdD-lG-KcC" secondAttribute="trailing" constant="8.5" id="uto-nz-OFv"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eSO-G3-7fz" secondAttribute="bottom" constant="12" id="vxZ-OE-no2"/>
                                             </constraints>
                                         </tableViewCellContentView>

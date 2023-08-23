@@ -18,6 +18,8 @@ class AddressAuthViewController: UIViewController, CLLocationManagerDelegate {
     let addressInfoLabel = UILabel(frame: CGRectMake(35, 739, 322, 43)) // 도로명 주소를 표시하는 라벨
     
     var userAddress: String = ""
+    var userAddressInfo: String = ""
+    var userAddressDetail: String = ""
     
 //    Reverse Geocode API 정보
     let NAVER_CLIENT_ID = "w79vm77s97"
@@ -130,6 +132,13 @@ extension AddressAuthViewController: NMFMapViewTouchDelegate, NMFMapViewCameraDe
                                 self.userAddress = area1 + " " + area2 + " " + area3 + " " + name + ", " + addition0
                                 print("주소 : \(self.userAddress)")
                                 self.addressInfoLabel.text = self.userAddress
+                                
+                                self.userAddressInfo = area1 + " " + area2 + " " + area3 + " " + name
+                                self.userAddressDetail = addition0
+                                let defaults = UserDefaults.standard
+                                defaults.set(self.userAddressInfo, forKey: "userAddress")
+                                defaults.set(self.userAddressDetail, forKey: "userAddressDetail")
+                                print("\(self.userAddressInfo) \(self.userAddressDetail)\n")
                             }
                         }
                     case .failure(let error):

@@ -18,7 +18,27 @@ class InfoBoardViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.register(BoardTableViewCell.nib(), forCellReuseIdentifier: BoardTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        swipeRecognizer()
     }
+    
+    func swipeRecognizer() {
+            let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture(_:)))
+            swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+            self.view.addGestureRecognizer(swipeRight)
+
+        }
+
+        @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer){
+            if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+                switch swipeGesture.direction{
+                case UISwipeGestureRecognizer.Direction.right:
+                    // 스와이프 시, 원하는 기능 구현.
+                    self.dismiss(animated: true, completion: nil)
+                default: break
+                }
+            }
+        }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

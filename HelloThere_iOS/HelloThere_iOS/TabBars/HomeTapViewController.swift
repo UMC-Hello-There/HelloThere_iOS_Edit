@@ -60,12 +60,34 @@ class HomeTapViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        AddressButton1.setTitle( UserDefaults.standard.string(forKey: "userAddressDetail"), for: .normal)
+        AddressButton2.setTitle( UserDefaults.standard.string(forKey: "userAddress"), for: .normal)
+        
+//
+//        AddressButton1.setTitle( "테스트", for: .normal)
+//        AddressButton2.setTitle( "테스트", for: .normal)
+        
         if accessToken != nil {
                    fetchDataFromServer()
                } else {
                    showLoginScreen()
                }
            }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        AddressButton1.setTitle( UserDefaults.standard.string(forKey: "userAddressDetail"), for: .normal)
+        AddressButton2.setTitle( UserDefaults.standard.string(forKey: "userAddress"), for: .normal)
+    }
+    
+    
+    @IBAction func didTapBoardButton(_ sender: Any) {
+        print("tap")
+        let nextStoryBoard = UIStoryboard(name: "BoardMain", bundle: nil)
+        let nextViewController = nextStoryBoard.instantiateViewController(identifier: "BoardMainViewController")
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated: true, completion: nil)
+    }
     
     func fetchDataFromServer() {
         fetchHotBoardData(with: accessToken!)
@@ -261,7 +283,7 @@ class HomeTapViewController: UIViewController {
         guard let freeBoardViewController = storyboard?.instantiateViewController(withIdentifier: "FreeBoardViewController") as? FreeBoardViewController else {
         return
     }
-    freeBoardViewController.modalPresentationStyle = .fullScreen
+        freeBoardViewController.modalPresentationStyle = .fullScreen
     present(freeBoardViewController, animated: true, completion: nil)    }
 
     @IBAction func ToConflictButton(_ sender: UIButton) {

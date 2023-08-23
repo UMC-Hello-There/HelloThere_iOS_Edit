@@ -14,13 +14,36 @@ class BoardMainViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     let data = ["자유 소통 게시판", "갈등 소통 게시판", "정보 공유 게시판", "공구 나눔 게시판", "중고 장터 게시판", "질문 게시판", "나만의 홈테리어"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         tv.delegate = self
         tv.dataSource = self
+        
+        swipeRecognizer()
     }
+    
+    func swipeRecognizer() {
+            let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture(_:)))
+            swipeRight.direction = UISwipeGestureRecognizer.Direction.right
+            self.view.addGestureRecognizer(swipeRight)
+            
+        }
+        
+        @objc func respondToSwipeGesture(_ gesture: UIGestureRecognizer){
+            if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+                switch swipeGesture.direction{
+                case UISwipeGestureRecognizer.Direction.right:
+                    // 스와이프 시, 원하는 기능 구현.
+                    self.dismiss(animated: true, completion: nil)
+                default: break
+                }
+            }
+        }
+
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
