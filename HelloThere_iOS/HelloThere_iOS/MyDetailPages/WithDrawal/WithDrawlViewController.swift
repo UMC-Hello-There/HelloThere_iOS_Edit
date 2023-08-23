@@ -26,7 +26,7 @@ class WithDrawlViewController: UIViewController {
     
 //    회원탈퇴 버튼
     @IBAction func didTapWithdrawalButton(_ sender: Any) {
-        let urlAgreement = "http://3.37.126.149:8080/users?agreement=\(agreementTextField.text ?? "")"
+        let urlAgreement = "https://hello-there.shop/users?agreement=\(agreementTextField.text ?? "")"
         let encodedStr = urlAgreement.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)! // 동의 문구가 한국어로 들어가므로
         let url = URL(string: encodedStr)!
 

@@ -60,7 +60,7 @@ class SignInViewController: UIViewController {
             "password" : password
         ]
         
-        let url = "http://3.37.126.149:8080/users/log-in"
+        let url = "https://hello-there.shop/users/log-in"
         
         AF.request(url, method: .post, parameters: body, encoding: JSONEncoding.default).responseJSON {
             response in
@@ -83,7 +83,7 @@ class SignInViewController: UIViewController {
                         print(">>")
                         print(json.result?.accessToken)
                         defaults.set(json.result?.accessToken, forKey: "accessToken")
-                        self.signInErrorMessageLabel.text = "성공✅"
+//                        self.signInErrorMessageLabel.text = "성공✅"
                         
                         let nextStoryBoard = UIStoryboard(name: "Main", bundle: nil)
                         let nextViewController = nextStoryBoard.instantiateViewController(identifier: "Main")
