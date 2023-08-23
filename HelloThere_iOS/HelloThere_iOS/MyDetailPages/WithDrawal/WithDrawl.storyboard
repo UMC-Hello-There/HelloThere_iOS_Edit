@@ -47,7 +47,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="cancle"/>
                                         <connections>
-                                            <action selector="didTapCancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qx9-42-5ui"/>
                                             <segue destination="VH7-Vr-KiZ" kind="presentation" modalPresentationStyle="fullScreen" id="Zhd-Na-YaE"/>
                                         </connections>
                                     </button>

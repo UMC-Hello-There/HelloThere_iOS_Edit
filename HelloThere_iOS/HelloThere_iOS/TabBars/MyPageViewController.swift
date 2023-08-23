@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,7 +24,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         
 //        닉네임 라벨 (api연결해서 닉네임 띄울 예정)
-        nicknameTextField.text = "새유저"
+        getUserInformation()
         
         profileImg.layer.cornerRadius = profileImg.frame.height/2
         profileImg.layer.borderWidth = 1
@@ -39,6 +40,31 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
     }
     
+    func getUserInformation(){
+        let url = "https://hello-there.shop/users"
+
+        let header = HTTPHeaders([HTTPHeader(name: "Authorization", value: UserDefaults.standard.string(forKey: "accessToken") ?? "")])
+        
+        AF.request(url, method: .get, headers: header).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                print(json)
+                let isSuccess = json["isSuccess"]
+                if isSuccess.rawValue as! Bool{
+                    print("파싱 성공")
+                    let nickName = json["result"]["nickName"].string ?? ""
+                    self.nicknameTextField.text = nickName
+                    print("\(nickName)")
+                }else {
+                    print("파싱실패")
+                    self.nicknameTextField.text = "새유저1"
+                }
+            case .failure(let error):
+                print(error.errorDescription ?? "")
+            }
+        }
+    }
     
 //    닉네임 변경 버튼을 클릭했을 때
     @IBAction func didTapModifiedNicknameButton(_ sender: Any) {
