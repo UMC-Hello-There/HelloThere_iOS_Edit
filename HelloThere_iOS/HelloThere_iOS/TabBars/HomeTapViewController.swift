@@ -263,23 +263,43 @@ class HomeTapViewController: UIViewController {
 
 
     @IBAction func ToFreeButton(_ sender: UIButton) {
-        // 자유 소통 게시판으로 화면 전환하는 로직을 구현하세요.
+        guard let freeBoardViewController = storyboard?.instantiateViewController(withIdentifier: "FreeBoardViewController") as? FreeBoardViewController else {
+        return
     }
+    freeBoardViewController.modalPresentationStyle = .fullScreen
+    present(freeBoardViewController, animated: true, completion: nil)    }
 
     @IBAction func ToConflictButton(_ sender: UIButton) {
-        // 갈등 소통 게시판으로 화면 전환하는 로직을 구현하세요.
+        guard let complainBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ComplainBoardViewController") as? ComplainBoardViewController else {
+                return
+            }
+            conplainBoardViewController.modalPresentationStyle = .fullScreen
+        present(complainBoardViewController, animated: true, completion: nil)
     }
 
     @IBAction func ToShareButton(_ sender: UIButton) {
-        // 공구 나눔 게시판으로 화면 전환하는 로직을 구현하세요.
+        shareBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShareBoardViewController") as? ShareBoardViewController else {
+                return
+            }
+            shareBoardViewController.modalPresentationStyle = .fullScreen
+            present(shareBoardViewController, animated: true, completion: nil)
     }
 
     @IBAction func ToMarketPlaceButton(_ sender: UIButton) {
-        // 중고장터 게시판으로 화면 전환하는 로직을 구현하세요.
+        shopBoardViewController = storyboard?.instantiateViewController(withIdentifier: "ShopBoardViewController") as? ShopBoardViewController else {
+                return
+            }
+            shopBoardViewController.modalPresentationStyle = .fullScreen
+            present(shopBoardViewController, animated: true, completion: nil)
     }
 
     @IBAction func ToInformationButton(_ sender: UIButton) {
-        // 정보공유 게시판으로 화면 전환하는 로직을 구현하세요.
+        infoBoardViewController = storyboard?.instantiateViewController(withIdentifier: "InfoBoardViewController") as?
+            InfoBoardViewController else {
+                return
+            }
+            infoBoardViewController.modalPresentationStyle = .fullScreen
+            present(infoBoardViewController, animated: true, completion: nil)
     }
 
     @IBAction func ToPopularButton(_ sender: UIButton) {
@@ -287,7 +307,11 @@ class HomeTapViewController: UIViewController {
     }
 
     @IBAction func ToQuestionButton(_ sender: UIButton) {
-        
+        qnaBoardViewController = storyboard?.instantiateViewController(withIdentifier: "QnaBoardViewController") as? QnaBoardViewController else {
+                return
+            }
+            qnaBoardViewController.modalPresentationStyle = .fullScreen
+            present(qnaBoardViewController, animated: true, comp
     }
 
     @IBAction func ToSearchButton(_ sender: UIButton) {

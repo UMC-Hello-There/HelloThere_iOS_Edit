@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,29 +18,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-H9-8aL">
-                                <rect key="frame" x="25" y="59" width="145" height="25"/>
+                                <rect key="frame" x="25" y="63" width="145" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="7vz-03-chQ"/>
                                     <constraint firstAttribute="height" constant="25" id="JE8-RV-1kC"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-yI-cC6">
-                                <rect key="frame" x="355" y="59" width="34" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCb-yI-cC6">
+                                <rect key="frame" x="346" y="63" width="43" height="33"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="cancle"/>
                                 <connections>
                                     <action selector="CancelShow:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vH6-3v-VcV"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0B4-em-quL">
-                                <rect key="frame" x="25" y="136" width="341" height="649"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0B4-em-quL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-qG-bkM">
-                                        <rect key="frame" x="17" y="148" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-qG-bkM">
+                                        <rect key="frame" x="0.0" y="0.0" width="341" height="660"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="660" id="5a7-2r-NqT"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ePe-qG-bkM" firstAttribute="width" secondItem="7oc-8M-ngN" secondAttribute="width" multiplier="0.823671" id="4xp-E6-3JJ"/>
+                                    <constraint firstItem="ePe-qG-bkM" firstAttribute="trailing" secondItem="De5-og-7c5" secondAttribute="trailing" id="QLr-kC-VMb"/>
+                                    <constraint firstItem="ePe-qG-bkM" firstAttribute="bottom" secondItem="De5-og-7c5" secondAttribute="bottom" id="TiJ-bR-pb7"/>
+                                    <constraint firstItem="ePe-qG-bkM" firstAttribute="top" secondItem="De5-og-7c5" secondAttribute="top" id="fPh-UW-11v"/>
+                                    <constraint firstItem="ePe-qG-bkM" firstAttribute="leading" secondItem="De5-og-7c5" secondAttribute="leading" id="mr3-dK-ngs"/>
+                                </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="De5-og-7c5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="7oc-8M-ngN"/>
                             </scrollView>
