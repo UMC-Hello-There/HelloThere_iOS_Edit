@@ -197,9 +197,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
             switch indexPath.row{
                 
             case 0: self.performSegue(withIdentifier: "AdQues", sender: nil)
-            
-            case 1:self.performSegue(withIdentifier: "showWithDrawl", sender: nil)
-            case 2:
+            case 1:
                 let sheet = UIAlertController(title: nil, message: "로그아웃 하시겠습니까?", preferredStyle: .alert)
                 sheet.addAction(UIAlertAction(title: "네", style: .default) {
                     (action) in
@@ -248,6 +246,7 @@ class MyPageViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 })
                 sheet.addAction(UIAlertAction(title: "아니오", style: .cancel, handler: nil))
                 self.present(sheet, animated: true)
+            case 2:self.performSegue(withIdentifier: "showWithDrawl", sender: nil)
             default:
                 return
             }

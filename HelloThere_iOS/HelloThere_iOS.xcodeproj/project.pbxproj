@@ -11,6 +11,7 @@
 		4200395A2A81DD4F00461FDA /* SignUpGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420039592A81DD4F00461FDA /* SignUpGuideViewController.swift */; };
 		4200395F2A81E02A00461FDA /* AddressVerification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4200395E2A81E02A00461FDA /* AddressVerification.storyboard */; };
 		420039612A81E03800461FDA /* AddressVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420039602A81E03800461FDA /* AddressVerificationViewController.swift */; };
+		423A805F2A96467000805383 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423A805E2A96467000805383 /* TabBarController.swift */; };
 		4248C7282A861006003234CA /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4248C7272A861006003234CA /* Manager.swift */; };
 		4248C72A2A8615E0003234CA /* SetAlarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248C7292A8615E0003234CA /* SetAlarm.storyboard */; };
 		42ADD80E2A80D9BB00925FE1 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ADD80D2A80D9BB00925FE1 /* SignIn.storyboard */; };
@@ -94,6 +95,7 @@
 		420039592A81DD4F00461FDA /* SignUpGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpGuideViewController.swift; sourceTree = "<group>"; };
 		4200395E2A81E02A00461FDA /* AddressVerification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressVerification.storyboard; sourceTree = "<group>"; };
 		420039602A81E03800461FDA /* AddressVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressVerificationViewController.swift; sourceTree = "<group>"; };
+		423A805E2A96467000805383 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4248C7272A861006003234CA /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		4248C7292A8615E0003234CA /* SetAlarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetAlarm.storyboard; sourceTree = "<group>"; };
 		42ADD80D2A80D9BB00925FE1 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
@@ -499,6 +501,7 @@
 				E2A6A1772A5D373900D734B5 /* SceneDelegate.swift */,
 				E2A6A1792A5D373900D734B5 /* ViewController.swift */,
 				E2A6A17B2A5D373900D734B5 /* Main.storyboard */,
+				423A805E2A96467000805383 /* TabBarController.swift */,
 				E2A6A1802A5D373B00D734B5 /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -750,6 +753,7 @@
 				E2A6A17A2A5D373900D734B5 /* ViewController.swift in Sources */,
 				E2A6A1D42A725E1400D734B5 /* WithDrawlViewController.swift in Sources */,
 				42ADD8152A80DDF500925FE1 /* SignUpViewController.swift in Sources */,
+				423A805F2A96467000805383 /* TabBarController.swift in Sources */,
 				42F46E3E2A9594760054D7C4 /* ShareBoardViewController.swift in Sources */,
 				E2A6A1762A5D373900D734B5 /* AppDelegate.swift in Sources */,
 				42F46E412A9594760054D7C4 /* BoardMainViewController.swift in Sources */,
