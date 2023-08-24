@@ -46,7 +46,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 ## 게시판
 자유 소통 게시판, 갈등 소통 게시판, 공구/나눔 게시판, 중고장터 게시판, 정보공유 게시판, 질문 게시판으로 7가지의 게시판이 있습니다   
 
-<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e88a99be-45c2-44d5-ab48-d894afdaf03d" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e77a1ac1-e25b-404c-be29-134cf10419f8" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/85e05728-9327-44fa-829f-108a32d7f0ce" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/94114b89-dff8-49fc-ac7b-b878ae1090d4" width="200" height="400">
 
@@ -54,20 +54,47 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 다른 유저와 해당 커뮤니티 사용 유저가 모두 있는 단톡방을 통해 자유롭게 이야기를 나눌 수 있습니다   
 현재 실시간 채팅은 불가능하며 UI만 완성되어 있는 상태입니다   
 
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/58bc4231-3b8c-44ea-b7ee-50104b40ac8d" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/17e2f99e-e3fe-453b-a759-124d3cfcb731" width="200" height="400">
+
 ## 마이페이지
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/9160f2ad-afa1-47fe-8d02-a985c2917ce1" width="200" height="400">
+
 #### 닉네임 변경
 유저의 닉네임을 변경할 수 있습니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/4ebd79e6-425c-4949-8b60-278142bda474" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/a469777a-a4cd-4df8-b194-e17660b69115" width="200" height="400">
 
 #### 주소 인증
 주소를 재인증할 수 있습니다   
 
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/91be15d3-0355-4ba4-9189-bbeaa2029bec" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/d46920ac-a604-45ee-b06a-7f78b5b2ad1c" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/084bbe9d-e3a4-42ab-9081-c2f83dadeb52" width="200" height="400">
+
 #### 비밀번호 변경 
 유저의 비밀번호를 변경할 수 있습니다   
 
-#### 로그아웃
-로그아웃을 할 수 있습니다
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/ff0b9e9b-34f2-4cbb-8fb4-49a6fdd709dc" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/a861c0dd-ccbe-4f5b-ad32-2bffb0376a15" width="200" height="400">
 
-#### 회원탈퇴
-회원탈퇴를 진행할 수 있습니다
+
+#### 알림설정
+채팅, 푸시알림 설정을 할 수 있습니다
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/7aca2e94-d275-4e03-b8b9-82cebad55dbf" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/2da75ad5-967a-467d-aa52-575190ab04e4" width="200" height="400">
+
+#### 로그아웃 & 회원탈퇴
+로그아웃을 할 수 있습니다   
+회원탈퇴를 진행할 수 있습니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/2bf53117-1671-4b61-b606-82ac6893eb5a" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/c98998b8-135c-4961-b62e-cef3b46dc254" width="200" height="400">
+
+
+# 프로젝트 멤버
+## 프론트엔드
 
 ![logo_w](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/cea010e8-6cb6-488d-bef3-d82913dda297)
