@@ -49,8 +49,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 어플의 메인화면으로 인기 게시물, 관리비, 7가지 주제 게시판, 오늘의 홈테리어와 중고장터를 확인할 수 있습니다   
 
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0875bf2a-8531-404e-9a3c-8656a223ef12" width="200" height="400">
-<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6dd50ff1-bfc0-4813-8219-2ebf61161b87" width="200" height="400">
-<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6dd50ff1-bfc0-4813-8219-2ebf61161b87" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/ebc6d5f5-ce1e-483c-8c7a-ac1e51e00e91" width="200" height="400">
 
 <br>
 <br>
@@ -142,7 +141,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
         <th>사진</th>
         <td width="100" align="center">
             <a href="https://github.com/LimJeonghyun">
-                <img src="./image/byeon.jpeg" width="150" height="150">
+                <img src="https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/f95c3175-9eb7-4c2e-91e1-b238b3d8e0c2" width="150" height="150">
             </a>
         </td>
         <td width="100" align="center">
