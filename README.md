@@ -40,7 +40,8 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 어플의 메인화면으로 인기 게시물, 관리비, 7가지 주제 게시판, 오늘의 홈테리어와 중고장터를 확인할 수 있습니다   
 
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0875bf2a-8531-404e-9a3c-8656a223ef12" width="200" height="400">
-
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6dd50ff1-bfc0-4813-8219-2ebf61161b87" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6dd50ff1-bfc0-4813-8219-2ebf61161b87" width="200" height="400">
 
 ## 관리비
 해당 달의 관리비를 메인화면에서 확인할 수 있습니다   
@@ -107,5 +108,161 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 
 # 프로젝트 멤버
 ## 프론트엔드
+
+<table width="950">
+    <thead>
+    </thead>
+    <tbody>
+    <tr>
+        <th>사진</th>
+        <td width="100" align="center">
+            <a href="https://github.com/gmlstjq123">
+                <img src="./image/byeon.jpeg" width="150" height="150">
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/rossssa">
+                <img src="./image/lee.png" width="150" height="150">
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/songhaechan">
+                <img src="./image/song.jpeg" width="150" height="150">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <th>이름</th>
+        <td width="100" align="center">임정현 / 저림</td>
+        <td width="100" align="center">서보현 / 티보</td>
+        <td width="100" align="center">이권민 / 공만</td>
+    </tr>
+    <tr>
+        <th>역할</th>
+        <td width="150" align="center">
+            로그인, 마이페이지 <br>서버 연결 및 수정,<br>채팅 UI,<br>메인페이지 수정,<br>전체 페이지 머지 및 <br>에러 수정
+        </td>
+        <td width="150" align="center">
+            마이페이지 UI,<br>게시판
+        </td>
+        <td width="150" align="center">
+            메인페이지,<br>관리비, 알림
+    </tr>
+    <tr>
+        <th>GitHub</th>
+        <td width="100" align="center">
+            <a href="https://github.com/LimJeonghyun">
+                <img src="http://img.shields.io/badge/gmlstjq123-green?style=social&logo=github"/>
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/seobottttt">
+                <img src="http://img.shields.io/badge/rossssa-green?style=social&logo=github"/>
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/Gongman41">
+                <img src="http://img.shields.io/badge/songhaechan-green?style=social&logo=github"/>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+
+## 백엔드
+
+<table width="950">
+    <thead>
+    </thead>
+    <tbody>
+    <tr>
+        <th>이름</th>
+        <td width="100" align="center">팀장 / 변현섭</td>
+        <td width="100" align="center">이다빈</td>
+        <td width="100" align="center">송해찬</td>
+        <td width="100" align="center">고영우</td>
+    </tr>
+    <tr>
+        <th>역할</th>
+        <td width="150" align="center">
+            유저, 아파트,<br> 소셜로그인 
+        </td>
+        <td width="150" align="center">
+            게시판, 댓글,<br> 좋아요
+        </td>
+        <td width="150" align="center">
+            게시판, 댓글,<br> 유저 신고
+        </td>
+        <td width="150" align="center">
+            유저, 알림,<br> 아파트
+        </td>
+    </tr>
+    <tr>
+        <th>GitHub</th>
+        <td width="100" align="center">
+            <a href="https://github.com/gmlstjq123">
+                <img src="http://img.shields.io/badge/gmlstjq123-green?style=social&logo=github"/>
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/rossssa">
+                <img src="http://img.shields.io/badge/rossssa-green?style=social&logo=github"/>
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/songhaechan">
+                <img src="http://img.shields.io/badge/songhaechan-green?style=social&logo=github"/>
+            </a>
+        </td>
+        <td width="100" align="center">
+            <a href="https://github.com/duddn2012">
+                <img src="http://img.shields.io/badge/duddn2012-green?style=social&logo=github"/>
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+
+## PM & Designer
+<table width="950">
+    <thead>
+    </thead>
+    <tbody>
+    <tr>
+        <th>이름</th>
+        <td width="100" align="center">금지윤 / 밴</td>
+        <td width="100" align="center">김준휘 / 릴리</td>
+    </tr>
+    <tr>
+        <th>역할</th>
+        <td width="150" align="center">
+            프로젝트 기획 및 총괄
+        </td>
+        <td width="150" align="center">
+            프로젝트 디자인
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+
+##### Other Developer
+최승현
+에러 처리 및 탭바 수정 도움
+
+# ⏲️ 개발 기간 
+- **프로젝트 기간**: 2023.07.01(일) ~ 2023.08.23(수)
+
+  <br>
+  <br>
+## 📝 프로젝트 아키텍쳐
+<div align="center"><a href="https://www.figma.com/file/9wxIvelTAROHpKgBXLpWsm/UMC4th_HelloThere?type=design&node-id=0-1&mode=design&t=JGrHDwFWM2EideWs-0">
+<img src="./image/stacks.png" height="500"></a>
+</div>
+**UI/UX 디자인**: <https://www.figma.com/file/9wxIvelTAROHpKgBXLpWsm/UMC4th_HelloThere?type=design&node-id=0-1&mode=design&t=zsw87B0sTsoYX0hm-0>
+<br>
+<br>
 
 ![logo_w](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/cea010e8-6cb6-488d-bef3-d82913dda297)
