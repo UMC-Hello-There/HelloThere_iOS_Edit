@@ -66,9 +66,10 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/4ebd79e6-425c-4949-8b60-278142bda474" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/a469777a-a4cd-4df8-b194-e17660b69115" width="200" height="400">
 
-#### 주소 인증
+#### 주소 재인증
 주소를 재인증할 수 있습니다   
 
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/4fcb7bd4-134e-4f52-a56b-eea7b06dca5c" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/91be15d3-0355-4ba4-9189-bbeaa2029bec" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/d46920ac-a604-45ee-b06a-7f78b5b2ad1c" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/084bbe9d-e3a4-42ab-9081-c2f83dadeb52" width="200" height="400">
