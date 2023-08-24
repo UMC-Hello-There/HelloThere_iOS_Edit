@@ -21,8 +21,9 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 > 
 > **친목**: 이웃과 친목 다지기   
 
+<br>
+<br>
 
- 
 # 기능 소개
 ## 회원가입
 간편하게 이메일로 회원가입을 진행합니다   
@@ -105,6 +106,8 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/2bf53117-1671-4b61-b606-82ac6893eb5a" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/c98998b8-135c-4961-b62e-cef3b46dc254" width="200" height="400">
 
+<br>
+<br>
 
 # 프로젝트 멤버
 ## 프론트엔드
@@ -116,17 +119,17 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
     <tr>
         <th>사진</th>
         <td width="100" align="center">
-            <a href="https://github.com/gmlstjq123">
+            <a href="https://github.com/LimJeonghyun">
                 <img src="./image/byeon.jpeg" width="150" height="150">
             </a>
         </td>
         <td width="100" align="center">
-            <a href="https://github.com/rossssa">
+            <a href="https://github.com/seobottttt">
                 <img src="./image/lee.png" width="150" height="150">
             </a>
         </td>
         <td width="100" align="center">
-            <a href="https://github.com/songhaechan">
+            <a href="https://github.com/Gongman41">
                 <img src="./image/song.jpeg" width="150" height="150">
             </a>
         </td>
@@ -178,10 +181,10 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
     <tbody>
     <tr>
         <th>이름</th>
-        <td width="100" align="center">팀장 / 변현섭</td>
-        <td width="100" align="center">이다빈</td>
-        <td width="100" align="center">송해찬</td>
-        <td width="100" align="center">고영우</td>
+        <td width="100" align="center">변현섭 / 크롬</td>
+        <td width="100" align="center">이다빈 / 니케</td>
+        <td width="100" align="center">송해찬 / 라온</td>
+        <td width="100" align="center">고영우 / 다니엘</td>
     </tr>
     <tr>
         <th>역할</th>
