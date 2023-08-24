@@ -324,7 +324,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
   <br>
   
 # 프로젝트 아키텍쳐 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
-[디자인 바로가기 : Figma](https://www.figma.com/file/9wxIvelTAROHpKgBXLpWsm/UMC4th_HelloThere?type=design&node-id=0-1&mode=design&t=JGrHDwFWM2EideWs-0)
+[디자인 보러가기 : Figma](https://www.figma.com/file/9wxIvelTAROHpKgBXLpWsm/UMC4th_HelloThere?type=design&node-id=0-1&mode=design&t=JGrHDwFWM2EideWs-0)
 
 [프로젝트 소개 페이지 : LandingPage](https://www.notion.so/HELLO-THERE-1cc78ecbb5b74c8d91b4016cd314c170?pvs=4)
 
