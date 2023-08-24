@@ -19,5 +19,16 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
   * 인테리어/생활에 다양한 팁 공유하기
 * 갈등해소
   * 겪고 있는 불편함을 원만하게 해결하기
+ 
+# 기능 소개
+## 회원가입
+간편하게 이메일로 회원가입을 진행합니다   
+회원가입 시 주소 인증을 통해 유저의 거주지에 맞는 커뮤니티로 이동합니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/82d492c6-7fda-4466-b1b1-300e99eebc00" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/d2461103-e34d-4d3d-9e2e-3900506b17d7" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6086acd0-1ed9-437a-9cdb-a38958e483cb" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/54bd6f4f-a8de-4417-a632-f22de971db70" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0e7da3b8-ee96-4047-b5f7-769af7204ac6" width="200" height="400">
 
 ![logo_w](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/cea010e8-6cb6-488d-bef3-d82913dda297)
