@@ -30,5 +30,44 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6086acd0-1ed9-437a-9cdb-a38958e483cb" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/54bd6f4f-a8de-4417-a632-f22de971db70" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0e7da3b8-ee96-4047-b5f7-769af7204ac6" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/effd2462-a1b5-4883-8bfa-5e867592818d" width="200" height="400">
+
+## 메인화면
+어플의 메인화면으로 인기 게시물, 관리비, 7가지 주제 게시판, 오늘의 홈테리어와 중고장터를 확인할 수 있습니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0875bf2a-8531-404e-9a3c-8656a223ef12" width="200" height="400">
+
+## 관리비
+해당 달의 관리비를 메인화면에서 확인할 수 있습니다   
+이전 3달의 관리비 기록을 그래프로 확인할 수 있습니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e88a99be-45c2-44d5-ab48-d894afdaf03d" width="200" height="400">
+
+## 게시판
+자유 소통 게시판, 갈등 소통 게시판, 공구/나눔 게시판, 중고장터 게시판, 정보공유 게시판, 질문 게시판으로 7가지의 게시판이 있습니다   
+
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e88a99be-45c2-44d5-ab48-d894afdaf03d" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/85e05728-9327-44fa-829f-108a32d7f0ce" width="200" height="400">
+<img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/94114b89-dff8-49fc-ac7b-b878ae1090d4" width="200" height="400">
+
+## 채팅
+다른 유저와 해당 커뮤니티 사용 유저가 모두 있는 단톡방을 통해 자유롭게 이야기를 나눌 수 있습니다   
+현재 실시간 채팅은 불가능하며 UI만 완성되어 있는 상태입니다   
+
+## 마이페이지
+#### 닉네임 변경
+유저의 닉네임을 변경할 수 있습니다   
+
+#### 주소 인증
+주소를 재인증할 수 있습니다   
+
+#### 비밀번호 변경 
+유저의 비밀번호를 변경할 수 있습니다   
+
+#### 로그아웃
+로그아웃을 할 수 있습니다
+
+#### 회원탈퇴
+회원탈퇴를 진행할 수 있습니다
 
 ![logo_w](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/cea010e8-6cb6-488d-bef3-d82913dda297)
