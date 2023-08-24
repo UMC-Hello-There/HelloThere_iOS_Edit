@@ -3,7 +3,10 @@
 ![header](https://capsule-render.vercel.app/api?type=cylinder&color=2BCBA5&height=150&section=header&text=HelloThere&fontColor=ffffff&fontSize=70&animation=fadeIn&fontAlignY=55&desc=%20&descAlignY=62&descAlign=62)
 </div>
 
-# 프로젝트 소개
+<br>
+
+# 프로젝트 소개 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
+
 대학생 연합 동아리 UMC [University MakeUs Challenge] 4기에 참여하여 프로젝트를 진행했습니다   
 Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입니다   
 세대 간 소음 문제 심화와 1인 가구 고독사 증가 등 사회적 이슈를 해결을 위해 6가지 목표를 가지고 기획하였습니다   
@@ -27,7 +30,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <br>
 <br>
 
-# 기능 소개
+# 기능 소개 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
 ## 회원가입
 간편하게 이메일로 회원가입을 진행합니다   
 회원가입 시 주소 인증을 통해 유저의 거주지에 맞는 커뮤니티로 이동합니다   
@@ -40,6 +43,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/effd2462-a1b5-4883-8bfa-5e867592818d" width="200" height="400">
 
 <br>
+<br>
 
 ## 메인화면
 어플의 메인화면으로 인기 게시물, 관리비, 7가지 주제 게시판, 오늘의 홈테리어와 중고장터를 확인할 수 있습니다   
@@ -49,6 +53,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/6dd50ff1-bfc0-4813-8219-2ebf61161b87" width="200" height="400">
 
 <br>
+<br>
 
 ## 관리비
 해당 달의 관리비를 메인화면에서 확인할 수 있습니다   
@@ -56,6 +61,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e88a99be-45c2-44d5-ab48-d894afdaf03d" width="200" height="400">
 
+<br>
 <br>
 
 ## 게시판
@@ -66,6 +72,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/94114b89-dff8-49fc-ac7b-b878ae1090d4" width="200" height="400">
 
 <br>
+<br>
 
 ## 채팅
 다른 유저와 해당 커뮤니티 사용 유저가 모두 있는 단톡방을 통해 자유롭게 이야기를 나눌 수 있습니다   
@@ -74,6 +81,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/58bc4231-3b8c-44ea-b7ee-50104b40ac8d" width="200" height="400">
 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/17e2f99e-e3fe-453b-a759-124d3cfcb731" width="200" height="400">
 
+<br>
 <br>
 
 ## 마이페이지
@@ -123,7 +131,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <br>
 <br>
 
-# 프로젝트 멤버
+# 프로젝트 멤버 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
 ## 프론트엔드
 
 <table width="950">
@@ -169,17 +177,17 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
         <th>GitHub</th>
         <td width="100" align="center">
             <a href="https://github.com/LimJeonghyun">
-                <img src="http://img.shields.io/badge/gmlstjq123-green?style=social&logo=github"/>
+                <img src="http://img.shields.io/badge/LimJeonghyun-green?style=social&logo=github"/>
             </a>
         </td>
         <td width="100" align="center">
             <a href="https://github.com/seobottttt">
-                <img src="http://img.shields.io/badge/rossssa-green?style=social&logo=github"/>
+                <img src="http://img.shields.io/badge/seobottttt-green?style=social&logo=github"/>
             </a>
         </td>
         <td width="100" align="center">
             <a href="https://github.com/Gongman41">
-                <img src="http://img.shields.io/badge/songhaechan-green?style=social&logo=github"/>
+                <img src="http://img.shields.io/badge/Gongman41-green?style=social&logo=github"/>
             </a>
         </td>
     </tr>
@@ -187,9 +195,15 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 </table>
 <br>
 
-##### Other Developer
-최승현
+<details>
+<summary>Other Developer</summary>
+<div markdown="1">
+
+최승현   
 에러 처리 및 탭바 수정 도움
+
+</div>
+</details>
 
 <br>
 
@@ -273,16 +287,25 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 
 <br>
 
-# ⏲️ 개발 기간 
+# 개발 기간 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
 - **프로젝트 기간**: 2023.07.01(일) ~ 2023.08.23(수)
 
   <br>
   <br>
-# 📝 프로젝트 아키텍쳐
+
+# 개발 스택 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30"> 
+- **Front-end**: Swift
+- **Library**: NaverMap API
+- **협업 관리**: Notion, Google Meet, Discord, Github, Figma
+
+  <br>
+  <br>
+  
+# 프로젝트 아키텍쳐 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30">
 [Figma](https://www.figma.com/file/9wxIvelTAROHpKgBXLpWsm/UMC4th_HelloThere?type=design&node-id=0-1&mode=design&t=JGrHDwFWM2EideWs-0)
 
 <br>
 <br>
 <br>
 
-![logo_w](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/cea010e8-6cb6-488d-bef3-d82913dda297)
+![logo_g](https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/e7669e3e-a911-40cf-9181-ddcad8982388)
