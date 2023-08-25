@@ -221,7 +221,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 <summary>Other Developer</summary>
 <div markdown="1">
 
-최승현   
+조승현   
 에러 처리 및 탭바 수정 도움
 
 </div>
