@@ -317,7 +317,7 @@ Hello There은 이웃과 소통하기 위한 공동주택 커뮤니티 어플입
 
 # 개발 스택 <img src = "https://github.com/UMC-Hello-There/HelloThere_iOS_Edit/assets/61608298/0ff5522b-f152-4463-b7ec-a02c67196754" width="40" height="30"> 
 - **Front-end:** Swift
-- **Library:** averMap API
+- **Library:** NaverMap API
 - **협업 관리:** Notion, Google Meet, Discord, Github, Figma
 
   <br>
